@@ -1,0 +1,51 @@
+body {
+	line-height:1.5;
+}
+
+pre {
+	margin-bottom:18px;
+}
+
+pre.prettyprint {
+	background:white !important;
+}
+
+pre.prettyprint li {
+	margin-left:0 !important;
+}
+
+img {
+	max-width:100%;
+}
+
+p, ul, ol {
+	margin-top:0;
+}
+
+ul ul, 
+ul ol, 
+ol ul, 
+ol ol {
+	margin:0;
+}
+
+table {
+	width:100%;
+	border-collapse:collapse;
+}
+
+table tr th, 
+table tr td {
+	padding:4px 16px;
+	border:1px solid #ccc;
+	background-color:#ffffff;
+}
+
+table tr td:even {
+	background-color:#f0f0f0;
+}
+
+table tr th {
+	background-color:#444444;
+	color:#ffffff;
+}

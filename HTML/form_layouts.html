@@ -1,0 +1,942 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- Apple iOS and Android stuff (do not remove) -->
+<meta name="apple-mobile-web-app-capable" content="no" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1" />
+
+<!-- Required Stylesheets -->
+<link rel="stylesheet" type="text/css" href="css/reset.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/text.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/fonts/ptsans/stylesheet.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/fluid.css" media="screen" />
+
+<link rel="stylesheet" type="text/css" href="css/mws.style.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/icons/16x16.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/icons/24x24.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/icons/32x32.css" media="screen" />
+
+<!-- Demo and Plugin Stylesheets -->
+<link rel="stylesheet" type="text/css" href="css/demo.css" media="screen" />
+
+<link rel="stylesheet" type="text/css" href="plugins/colorpicker/colorpicker.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="plugins/imgareaselect/css/imgareaselect-default.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="plugins/fullcalendar/fullcalendar.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="plugins/fullcalendar/fullcalendar.print.css" media="print" />
+<link rel="stylesheet" type="text/css" href="plugins/chosen/chosen.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="plugins/prettyphoto/css/prettyPhoto.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="plugins/tipsy/tipsy.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="plugins/sourcerer/Sourcerer-1.2.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="plugins/jgrowl/jquery.jgrowl.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="plugins/spinner/ui.spinner.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="jui/css/jquery.ui.all.css" media="screen" />
+
+<!-- Theme Stylesheet -->
+<link rel="stylesheet" type="text/css" href="css/mws.theme.css" media="screen" />
+
+<!-- JavaScript Plugins -->
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="js/jquery.placeholder.js"></script>
+<script type="text/javascript" src="js/jquery.fileinput.js"></script>
+
+<!-- jQuery-UI Dependent Scripts -->
+<script type="text/javascript" src="jui/js/jquery-ui-1.8.20.min.js"></script>
+<script type="text/javascript" src="jui/js/jquery.ui.timepicker.min.js"></script>
+<script type="text/javascript" src="jui/js/jquery.ui.touch-punch.js"></script>
+<script type="text/javascript" src="plugins/spinner/ui.spinner.min.js"></script>
+
+<!-- Plugin Scripts -->
+<script type="text/javascript" src="plugins/imgareaselect/jquery.imgareaselect.min.js"></script>
+<script type="text/javascript" src="plugins/duallistbox/jquery.dualListBox-1.3.min.js"></script>
+<script type="text/javascript" src="plugins/jgrowl/jquery.jgrowl-min.js"></script>
+<script type="text/javascript" src="plugins/fullcalendar/fullcalendar.min.js"></script>
+<script type="text/javascript" src="plugins/datatables/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="plugins/chosen/chosen.jquery.min.js"></script>
+<script type="text/javascript" src="plugins/prettyphoto/js/jquery.prettyPhoto.min.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="plugins/flot/excanvas.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="plugins/flot/jquery.flot.min.js"></script>
+<script type="text/javascript" src="plugins/flot/jquery.flot.pie.min.js"></script>
+<script type="text/javascript" src="plugins/flot/jquery.flot.stack.min.js"></script>
+<script type="text/javascript" src="plugins/flot/jquery.flot.resize.min.js"></script>
+<script type="text/javascript" src="plugins/colorpicker/colorpicker-min.js"></script>
+<script type="text/javascript" src="plugins/tipsy/jquery.tipsy-min.js"></script>
+<script type="text/javascript" src="plugins/sourcerer/Sourcerer-1.2-min.js"></script>
+<script type="text/javascript" src="plugins/validate/jquery.validate-min.js"></script>
+
+<!-- Core Script -->
+<script type="text/javascript" src="js/core/mws.js"></script>
+<script type="text/javascript" src="js/core/mws.wizard.js"></script>
+
+<!-- Themer Script (Remove if not needed) -->
+<script type="text/javascript" src="js/core/themer.js"></script>
+
+<!-- Demo Scripts (remove if not needed) -->
+<script type="text/javascript" src="js/demo/demo.js"></script>
+
+<title>MWS Admin - Form Layouts</title>
+
+</head>
+
+<body>
+
+	<!-- Themer (Remove if not needed) -->  
+	<div id="mws-themer">
+        <div id="mws-themer-content">
+        	<div id="mws-themer-ribbon"></div>
+            <div id="mws-themer-toggle"></div>
+        	<div id="mws-theme-presets-container" class="mws-themer-section">
+	        	<label for="mws-theme-presets">Color Presets</label>
+            </div>
+            <div class="mws-themer-separator"></div>
+        	<div id="mws-theme-pattern-container" class="mws-themer-section">
+	        	<label for="mws-theme-patterns">Background</label>
+            </div>
+            <div class="mws-themer-separator"></div>
+            <div class="mws-themer-section">
+                <ul>
+                    <li class="clearfix"><span>Base Color</span> <div id="mws-base-cp" class="mws-cp-trigger"></div></li>
+                    <li class="clearfix"><span>Highlight Color</span> <div id="mws-highlight-cp" class="mws-cp-trigger"></div></li>
+                    <li class="clearfix"><span>Text Color</span> <div id="mws-text-cp" class="mws-cp-trigger"></div></li>
+                    <li class="clearfix"><span>Text Glow Color</span> <div id="mws-textglow-cp" class="mws-cp-trigger"></div></li>
+                    <li class="clearfix"><span>Text Glow Opacity</span> <div id="mws-textglow-op"></div></li>
+                </ul>
+            </div>
+            <div class="mws-themer-separator"></div>
+            <div class="mws-themer-section">
+	            <button class="mws-button red small" id="mws-themer-getcss">Get CSS</button>
+            </div>
+        </div>
+        <div id="mws-themer-css-dialog">
+        	<form class="mws-form">
+            	<div class="mws-form-row">
+		        	<div class="mws-form-item">
+                    	<textarea cols="auto" rows="auto" readonly="readonly"></textarea>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Themer End -->
+
+	<!-- Header -->
+	<div id="mws-header" class="clearfix">
+    
+    	<!-- Logo Container -->
+    	<div id="mws-logo-container">
+        
+        	<!-- Logo Wrapper, images put within this wrapper will always be vertically centered -->
+        	<div id="mws-logo-wrap">
+            	<img src="images/mws-logo.png" alt="mws admin" />
+			</div>
+        </div>
+        
+        <!-- User Tools (notifications, logout, profile, change password) -->
+        <div id="mws-user-tools" class="clearfix">
+        
+        	<!-- Notifications -->
+        	<div id="mws-user-notif" class="mws-dropdown-menu">
+            	<a href="#" class="mws-i-24 i-alert-2 mws-dropdown-trigger">Notifications</a>
+                
+                <!-- Unread notification count -->
+                <span class="mws-dropdown-notif">35</span>
+                
+                <!-- Notifications dropdown -->
+                <div class="mws-dropdown-box">
+                	<div class="mws-dropdown-content">
+                        <ul class="mws-notifications">
+                        	<li class="read">
+                            	<a href="#">
+                                    <span class="message">
+                                        Lorem ipsum dolor sit amet consectetur adipiscing elit, et al commore
+                                    </span>
+                                    <span class="time">
+                                        January 21, 2012
+                                    </span>
+                                </a>
+                            </li>
+                        	<li class="read">
+                            	<a href="#">
+                                    <span class="message">
+                                        Lorem ipsum dolor sit amet
+                                    </span>
+                                    <span class="time">
+                                        January 21, 2012
+                                    </span>
+                                </a>
+                            </li>
+                        	<li class="unread">
+                            	<a href="#">
+                                    <span class="message">
+                                        Lorem ipsum dolor sit amet
+                                    </span>
+                                    <span class="time">
+                                        January 21, 2012
+                                    </span>
+                                </a>
+                            </li>
+                        	<li class="unread">
+                            	<a href="#">
+                                    <span class="message">
+                                        Lorem ipsum dolor sit amet
+                                    </span>
+                                    <span class="time">
+                                        January 21, 2012
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="mws-dropdown-viewall">
+	                        <a href="#">View All Notifications</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Messages -->
+            <div id="mws-user-message" class="mws-dropdown-menu">
+            	<a href="#" class="mws-i-24 i-message mws-dropdown-trigger">Messages</a>
+                
+                <!-- Unred messages count -->
+                <span class="mws-dropdown-notif">35</span>
+                
+                <!-- Messages dropdown -->
+                <div class="mws-dropdown-box">
+                	<div class="mws-dropdown-content">
+                        <ul class="mws-messages">
+                        	<li class="read">
+                            	<a href="#">
+                                    <span class="sender">John Doe</span>
+                                    <span class="message">
+                                        Lorem ipsum dolor sit amet consectetur adipiscing elit, et al commore
+                                    </span>
+                                    <span class="time">
+                                        January 21, 2012
+                                    </span>
+                                </a>
+                            </li>
+                        	<li class="read">
+                            	<a href="#">
+                                    <span class="sender">John Doe</span>
+                                    <span class="message">
+                                        Lorem ipsum dolor sit amet
+                                    </span>
+                                    <span class="time">
+                                        January 21, 2012
+                                    </span>
+                                </a>
+                            </li>
+                        	<li class="unread">
+                            	<a href="#">
+                                    <span class="sender">John Doe</span>
+                                    <span class="message">
+                                        Lorem ipsum dolor sit amet
+                                    </span>
+                                    <span class="time">
+                                        January 21, 2012
+                                    </span>
+                                </a>
+                            </li>
+                        	<li class="unread">
+                            	<a href="#">
+                                    <span class="sender">John Doe</span>
+                                    <span class="message">
+                                        Lorem ipsum dolor sit amet
+                                    </span>
+                                    <span class="time">
+                                        January 21, 2012
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="mws-dropdown-viewall">
+	                        <a href="#">View All Messages</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- User Information and functions section -->
+            <div id="mws-user-info" class="mws-inset">
+            
+            	<!-- User Photo -->
+            	<div id="mws-user-photo">
+                	<img src="example/profile.jpg" alt="User Photo" />
+                </div>
+                
+                <!-- Username and Functions -->
+                <div id="mws-user-functions">
+                    <div id="mws-username">
+                        Hello, John Doe
+                    </div>
+                    <ul>
+                    	<li><a href="#">Profile</a></li>
+                        <li><a href="#">Change Password</a></li>
+                        <li><a href="index.html">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Start Main Wrapper -->
+    <div id="mws-wrapper">
+    
+    	<!-- Necessary markup, do not remove -->
+		<div id="mws-sidebar-stitch"></div>
+		<div id="mws-sidebar-bg"></div>
+        
+        <!-- Sidebar Wrapper -->
+        <div id="mws-sidebar">
+        
+        	<!-- Searchbox -->
+        	<div id="mws-searchbox" class="mws-inset">
+            	<form action="typography.html">
+                	<input type="text" class="mws-search-input" />
+                    <input type="submit" class="mws-search-submit" />
+                </form>
+            </div>
+            
+            <!-- Main Navigation -->
+            <div id="mws-navigation">
+            	<ul>
+                	<li><a href="dashboard.html" class="mws-i-24 i-home">Dashboard</a></li>
+                	<li><a href="charts.html" class="mws-i-24 i-chart">Charts</a></li>
+                	<li><a href="calendar.html" class="mws-i-24 i-day-calendar">Calendar</a></li>
+                	<li><a href="files.html" class="mws-i-24 i-file-cabinet">File Manager</a></li>
+                	<li><a href="table.html" class="mws-i-24 i-table-1">Table</a></li>
+                	<li class="active">
+                    	<a href="#" class="mws-i-24 i-list">Forms</a>
+                        <ul>
+                        	<li><a href="form_layouts.html">Layouts</a></li>
+                        	<li><a href="form_elements.html">Elements</a></li>
+                        </ul>
+                    </li>
+                	<li><a href="widgets.html" class="mws-i-24 i-cog">Widgets</a></li>
+                	<li><a href="typography.html" class="mws-i-24 i-text-styling">Typography</a></li>
+                	<li><a href="grids.html" class="mws-i-24 i-blocks-images">Grids &amp; Panels</a></li>
+                	<li><a href="gallery.html" class="mws-i-24 i-polaroids">Gallery</a></li>
+                	<li><a href="error.html" class="mws-i-24 i-alert-2">Error Page</a></li>
+                	<li>
+                    	<a href="icons.html" class="mws-i-24 i-pacman">
+                        	Icons <span class="mws-nav-tooltip">2000+</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Main Container Start -->
+        <div id="mws-container" class="clearfix">
+        
+        	<!-- Inner Container Start -->
+            <div class="container">
+            
+            	<!-- Statistics Button Container -->
+            	<div class="mws-report-container clearfix">
+                	
+                    <!-- Statistic Item -->
+                	<a class="mws-report" href="#">
+                    	<!-- Statistic Icon (edit to change icon) -->
+                    	<span class="mws-report-icon mws-ic ic-building"></span>
+                        
+                        <!-- Statistic Content -->
+                        <span class="mws-report-content">
+                        	<span class="mws-report-title">Floors Climbed</span>
+                            <span class="mws-report-value">324</span>
+                        </span>
+                    </a>
+
+                	<a class="mws-report" href="#">
+                    	<!-- Statistic Icon (edit to change icon) -->
+                    	<span class="mws-report-icon mws-ic ic-sport"></span>
+                        
+                        <!-- Statistic Content -->
+                        <span class="mws-report-content">
+                        	<span class="mws-report-title">Calories Burned</span>
+                            <span class="mws-report-value down">74%</span>
+                        </span>
+                    </a>
+
+                	<a class="mws-report" href="#">
+                    	<!-- Statistic Icon (edit to change icon) -->
+                    	<span class="mws-report-icon mws-ic ic-walk"></span>
+                        
+                        <!-- Statistic Content -->
+                        <span class="mws-report-content">
+                        	<span class="mws-report-title">Kilometers Walked</span>
+                            <span class="mws-report-value">14</span>
+                        </span>
+                    </a>
+                    
+                	<a class="mws-report" href="#">
+                    	<!-- Statistic Icon (edit to change icon) -->
+                    	<span class="mws-report-icon mws-ic ic-bug"></span>
+                        
+                        <!-- Statistic Content -->
+                        <span class="mws-report-content">
+                        	<span class="mws-report-title">Bugs Fixed</span>
+                            <span class="mws-report-value up">22%</span>
+                        </span>
+                    </a>
+                    
+                	<a class="mws-report" href="#">
+                    	<!-- Statistic Icon (edit to change icon) -->
+                    	<span class="mws-report-icon mws-ic ic-car"></span>
+
+                        <!-- Statistic Content -->
+                        <span class="mws-report-content">
+                        	<span class="mws-report-title">Cars Repaired</span>
+                            <span class="mws-report-value">77</span>
+                        </span>
+                    </a>
+                </div>
+                
+                <!-- Panels Start -->
+                
+            	<div class="mws-panel grid_8">
+                	<div class="mws-panel-header">
+                    	<span class="mws-i-24 i-list">Inline Form</span>
+                    </div>
+                    <div class="mws-panel-body">
+                    	<form class="mws-form" action="form_layouts.html">
+                    		<div class="mws-form-inline">
+                    			<div class="mws-form-row">
+                    				<label>Small text field</label>
+                    				<div class="mws-form-item small">
+                    					<input type="text" class="mws-textinput" />
+                    				</div>
+                    			</div>
+                    			<div class="mws-form-row">
+                    				<label>Medium text field</label>
+                    				<div class="mws-form-item medium">
+                    					<input type="text" class="mws-textinput" />
+                    				</div>
+                    			</div>
+                    			<div class="mws-form-row">
+                    				<label>Large text field</label>
+                    				<div class="mws-form-item large">
+                    					<input type="text" class="mws-textinput" />
+                    				</div>
+                    			</div>
+                    			<div class="mws-form-row">
+                    				<label>Textarea</label>
+                    				<div class="mws-form-item large">
+                    					<textarea rows="100%" cols="100%"></textarea>
+                    				</div>
+                    			</div>
+                    			<div class="mws-form-row">
+                    				<label>Dropdown List</label>
+                    				<div class="mws-form-item small">
+                    					<select>
+                    						<option>Option 1</option>
+                    						<option>Option 3</option>
+                    						<option>Option 4</option>
+                    						<option>Option 5</option>
+                    					</select>
+                    				</div>
+                    			</div>
+                    			<div class="mws-form-row">
+                    				<label>Checkboxes</label>
+                    				<div class="mws-form-item clearfix">
+                    					<ul class="mws-form-list inline">
+                    						<li><input type="checkbox" /> <label>Checkbox 1</label></li>
+                    						<li><input type="checkbox" /> <label>Checkbox 2</label></li>
+                    						<li><input type="checkbox" /> <label>Checkbox 3</label></li>
+                    						<li><input type="checkbox" /> <label>Checkbox 4</label></li>
+                    					</ul>
+                    				</div>
+                    			</div>
+                    			<div class="mws-form-row">
+                    				<label>Radio Buttons</label>
+                    				<div class="mws-form-item clearfix">
+                    					<ul class="mws-form-list inline">
+                    						<li><input type="radio" /> <label>Radio 1</label></li>
+                    						<li><input type="radio" /> <label>Radio 1</label></li>
+                    						<li><input type="radio" /> <label>Radio 1</label></li>
+                    						<li><input type="radio" /> <label>Radio 1</label></li>
+                    					</ul>
+                    				</div>
+                    			</div>
+                    		</div>
+                    		<div class="mws-button-row">
+                    			<input type="submit" value="Submit" class="mws-button red" />
+                    			<input type="reset" value="Reset" class="mws-button gray" />
+                    		</div>
+                    	</form>
+                    </div>    	
+                </div>
+                
+            	<div class="mws-panel grid_8">
+                	<div class="mws-panel-header">
+                    	<span class="mws-i-24 i-list">Block Form</span>
+                    </div>
+                    <div class="mws-panel-body">
+                    	<form class="mws-form" action="form_layouts.html">
+                    		<div class="mws-form-block">
+                    			<div class="mws-form-row">
+                    				<label>Small text field</label>
+                    				<div class="mws-form-item small">
+                    					<input type="text" class="mws-textinput" />
+                    				</div>
+                    			</div>
+                    			<div class="mws-form-row">
+                    				<label>Medium text field</label>
+                    				<div class="mws-form-item medium">
+                    					<input type="text" class="mws-textinput" />
+                    				</div>
+                    			</div>
+                    			<div class="mws-form-row">
+                    				<label>Large text field</label>
+                    				<div class="mws-form-item large">
+                    					<input type="text" class="mws-textinput" />
+                    				</div>
+                    			</div>
+                    			<div class="mws-form-row">
+                    				<label>Textarea</label>
+                    				<div class="mws-form-item large">
+                    					<textarea rows="100%" cols="100%"></textarea>
+                    				</div>
+                    			</div>
+                    			<div class="mws-form-row">
+                    				<label>Dropdown List</label>
+                    				<div class="mws-form-item small">
+                    					<select>
+                    						<option>Option 1</option>
+                    						<option>Option 3</option>
+                    						<option>Option 4</option>
+                    						<option>Option 5</option>
+                    					</select>
+                    				</div>
+                    			</div>
+                    			<div class="mws-form-row">
+                    				<label>Checkboxes</label>
+                    				<div class="mws-form-item clearfix">
+                    					<ul class="mws-form-list">
+                    						<li><input type="checkbox" /> <label>Checkbox 1</label></li>
+                    						<li><input type="checkbox" /> <label>Checkbox 2</label></li>
+                    						<li><input type="checkbox" /> <label>Checkbox 3</label></li>
+                    						<li><input type="checkbox" /> <label>Checkbox 4</label></li>
+                    					</ul>
+                    				</div>
+                    			</div>
+                    			<div class="mws-form-row">
+                    				<label>Radio Buttons</label>
+                    				<div class="mws-form-item clearfix">
+                    					<ul class="mws-form-list">
+                    						<li><input type="radio" /> <label>Radio 1</label></li>
+                    						<li><input type="radio" /> <label>Radio 1</label></li>
+                    						<li><input type="radio" /> <label>Radio 1</label></li>
+                    						<li><input type="radio" /> <label>Radio 1</label></li>
+                    					</ul>
+                    				</div>
+                    			</div>
+                    		</div>
+                    		<div class="mws-button-row">
+                    			<input type="submit" value="Submit" class="mws-button red" />
+                    			<input type="reset" value="Reset" class="mws-button gray" />
+                    		</div>
+                    	</form>
+                    </div>
+                </div>
+                
+            	<div class="mws-panel grid_8">
+                	<div class="mws-panel-header">
+                    	<span class="mws-i-24 i-list">Columned Form</span>
+                    </div>
+                    <div class="mws-panel-body">
+                    	<form class="mws-form">
+                        	<div class="mws-form-inline">
+                                <div class="mws-form-row">
+                                    <label>Form Row</label>
+                                    <div class="mws-form-item large">
+                                    	<div class="mws-form-cols clearfix">
+                                            <div class="mws-form-col-2-8 alpha">
+                                                <div class="mws-form-item">
+                                                    <input type="text" class="mws-textinput" />
+                                                </div>
+                                            </div>
+                                            <div class="mws-form-col-2-8">
+                                                <div class="mws-form-item">
+                                                    <input type="text" class="mws-textinput" />
+                                                </div>
+                                            </div>
+                                            <div class="mws-form-col-2-8">
+                                                <div class="mws-form-item">
+                                                    <input type="text" class="mws-textinput" />
+                                                </div>
+                                            </div>
+                                            <div class="mws-form-col-2-8 omega">
+                                                <div class="mws-form-item">
+                                                    <input type="text" class="mws-textinput" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        	<div class="mws-form-cols clearfix">
+                                <div class="mws-form-col-1-8 alpha">
+                                    <label>Column 1/8</label>
+                                    <div class="mws-form-item large">
+                                        <input type="text" class="mws-textinput" />
+                                    </div>
+                                </div>
+                                <div class="mws-form-col-1-8">
+                                    <label>Column 1/8</label>
+                                    <div class="mws-form-item large">
+                                        <input type="text" class="mws-textinput" />
+                                    </div>
+                                </div>
+                                <div class="mws-form-col-1-8">
+                                    <label>Column 1/8</label>
+                                    <div class="mws-form-item large">
+                                        <input type="text" class="mws-textinput" />
+                                    </div>
+                                </div>
+                                <div class="mws-form-col-1-8">
+                                    <label>Column 1/8</label>
+                                    <div class="mws-form-item large">
+                                        <input type="text" class="mws-textinput" />
+                                    </div>
+                                </div>
+                                <div class="mws-form-col-1-8">
+                                    <label>Column 1/8</label>
+                                    <div class="mws-form-item large">
+                                        <input type="text" class="mws-textinput" />
+                                    </div>
+                                </div>
+                                <div class="mws-form-col-1-8">
+                                    <label>Column 1/8</label>
+                                    <div class="mws-form-item large">
+                                        <input type="text" class="mws-textinput" />
+                                    </div>
+                                </div>
+                                <div class="mws-form-col-1-8">
+                                    <label>Column 1/8</label>
+                                    <div class="mws-form-item large">
+                                        <input type="text" class="mws-textinput" />
+                                    </div>
+                                </div>
+                                <div class="mws-form-col-1-8 omega">
+                                    <label>Column 1/8</label>
+                                    <div class="mws-form-item large">
+                                        <input type="text" class="mws-textinput" />
+                                    </div>
+                                </div>
+    
+                                <div class="mws-form-col-5-8 alpha">
+                                    <label>Column 5/8</label>
+                                    <div class="mws-form-item large">
+                                        <input type="text" class="mws-textinput" />
+                                    </div>
+                                </div>
+                                <div class="mws-form-col-3-8 omega">
+                                    <label>Column 3/8</label>
+                                    <div class="mws-form-item large">
+                                        <input type="text" class="mws-textinput" />
+                                    </div>
+                                </div>
+                                
+                                <div class="mws-form-col-2-8 alpha">
+                                    <label>Column 2/8</label>
+                                    <div class="mws-form-item large">
+                                        <input type="text" class="mws-textinput" />
+                                    </div>
+                                </div>
+                                <div class="mws-form-col-2-8">
+                                    <label>Column 2/8</label>
+                                    <div class="mws-form-item large">
+                                        <input type="text" class="mws-textinput" />
+                                    </div>
+                                </div>
+                                <div class="mws-form-col-2-8">
+                                    <label>Column 2/8</label>
+                                    <div class="mws-form-item large">
+                                        <input type="text" class="mws-textinput" />
+                                    </div>
+                                </div>
+                                <div class="mws-form-col-2-8 omega">
+                                    <label>Column 2/8</label>
+                                    <div class="mws-form-item large">
+                                        <input type="text" class="mws-textinput" />
+                                    </div>
+                                </div>
+                                
+                                <div class="mws-form-col-4-8 alpha">
+                                    <label>Column 4/8</label>
+                                    <div class="mws-form-item large">
+                                        <input type="text" class="mws-textinput" />
+                                    </div>
+                                </div>
+                                <div class="mws-form-col-4-8 omega">
+                                    <label>Column 4/8</label>
+                                    <div class="mws-form-item large">
+                                        <input type="text" class="mws-textinput" />
+                                    </div>
+                                </div>
+                                
+                                <div class="mws-form-col-6-8 alpha">
+                                    <label>Column 6/8</label>
+                                    <div class="mws-form-item large">
+                                        <input type="text" class="mws-textinput" />
+                                    </div>
+                                </div>
+                                <div class="mws-form-col-2-8 omega">
+                                    <label>Column 2/8</label>
+                                    <div class="mws-form-item large">
+                                        <input type="text" class="mws-textinput" />
+                                    </div>
+                                </div>
+                                
+                                <div class="mws-form-col-7-8 alpha">
+                                    <label>Column 7/8</label>
+                                    <div class="mws-form-item large">
+                                        <input type="text" class="mws-textinput" />
+                                    </div>
+                                </div>
+                                <div class="mws-form-col-1-8 omega">
+                                    <label>Column 1/8</label>
+                                    <div class="mws-form-item large">
+                                        <input type="text" class="mws-textinput" />
+                                    </div>
+                                </div>
+                            </div>
+                            
+                    		<div class="mws-button-row">
+                    			<input type="submit" value="Submit" class="mws-button red" />
+                    			<input type="reset" value="Reset" class="mws-button gray" />
+                    		</div>
+                        </form>
+                    </div>
+                </div>
+                
+            	<div class="mws-panel grid_8">
+                	<div class="mws-panel-header">
+                    	<span class="mws-i-24 i-sign-post">Form with Wizard Navigation</span>
+                    </div>
+                    <div class="mws-panel-body">
+                        <form id="mws-wizard-form" class="mws-form" action="dashboard.html">
+                            <div class="mws-wizard-nav clearfix">
+                                <ul>
+                                    <li><a class="mws-ic-16 ic-accept" href="#step-1">Member Profile</a></li>
+                                    <li><a class="mws-ic-16 ic-delivery" href="#step-2">Membership Stype</a></li>
+                                    <li><a class="mws-ic-16 ic-user" href="#step-3">Confirmation</a></li>
+                                </ul>
+                            </div>
+                            
+                            <fieldset id="step-1" class="mws-form-inline">
+                                <div id class="mws-form-row">
+                                    <label>Fullname <span class="required">*</span></label>
+                                    <div class="mws-form-item large">
+                                        <input type="text" name="fullname" class="required mws-textinput" />
+                                    </div>
+                                </div>
+                                <div class="mws-form-row">
+                                    <label>Email <span class="required">*</span></label>
+                                    <div class="mws-form-item large">
+                                        <input type="text" name="email" class="required email mws-textinput" />
+                                    </div>
+                                </div>
+                                <div class="mws-form-row">
+                                    <label>Address <span class="required">*</span></label>
+                                    <div class="mws-form-item large">
+                                        <textarea name="address" rows="100%" cols="100%" class="required"></textarea>
+                                    </div>
+                                </div>
+                                <div class="mws-form-row">
+                                    <label>Gender <span class="required">*</span></label>
+                                    <div class="mws-form-item">
+                                        <ul class="mws-form-list">
+                                            <li><input type="radio" id="male" name="gender" class="required"/> <label for="male">Male</label></li>
+                                            <li><input type="radio" id="female" name="gender" /> <label for="female">Female</label></li>
+                                        </ul>
+                                        <label class="error plain" generated="true" for="gender" style="display:none"></label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            
+                            <fieldset id="step-2" class="mws-form-inline">
+                                <div id class="mws-form-row">
+                                    <label>Membership Plan <span class="required">*</span></label>
+                                    <div class="mws-form-item large">
+                                        <select class="required">
+                                        	<option>Free</option>
+                                        	<option>Standard</option>
+                                        	<option>Premium</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="mws-form-row">
+                                    <label>Subscription Period <span class="required">*</span></label>
+                                    <div class="mws-form-item large">
+                                        <select class="required">
+                                        	<option>One Month</option>
+                                        	<option>Six Months</option>
+                                        	<option>Twelve Months</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="mws-form-row">
+                                    <label>Payment Method <span class="required">*</span></label>
+                                    <div class="mws-form-item">
+                                        <ul class="mws-form-list">
+                                            <li><input type="radio" id="cc" name="pm" class="required" /> <label for="cc">Credit Card</label></li>
+                                            <li><input type="radio" id="pp" name="pm" /> <label for="pp">PayPal</label></li>
+                                        </ul>
+                                        <label class="error plain" generated="true" for="pm" style="display:none"></label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            
+                            <fieldset id="step-3" class="mws-form-inline">
+                                <div class="mws-form-row">
+                                    <label>Message <span class="required">*</span></label>
+                                    <div class="mws-form-item large">
+                                        <textarea name="address" rows="100%" cols="100%" class="required"></textarea>
+                                    </div>
+                                </div>
+                                <div class="mws-form-row">
+                                    <label>Subscribe Newsletter <span class="required">*</span></label>
+                                    <div class="mws-form-item">
+                                        <ul class="mws-form-list inline">
+                                            <li><input type="radio" id="sn_yes" name="sn" class="required" /> <label for="sn_yes">Yes</label></li>
+                                            <li><input type="radio" id="sn_no" name="sn" /> <label for="sn_no">No</label></li>
+                                        </ul>
+                                        <label class="error plain" generated="true" for="sn" style="display:none"></label>
+                                    </div>
+                                </div>
+                                <div class="mws-form-row">
+                                    <label>I agree to the TOS <span class="required">*</span></label>
+                                    <div class="mws-form-item">
+                                        <ul class="mws-form-list inline">
+                                            <li><input type="checkbox" id="tos_y" name="tos" class="required" /> <label for="tos_y">Yes</label></li>
+                                        </ul>
+                                        <label class="error plain" generated="true" for="tos" style="display:none"></label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            
+                        </form>
+                    </div>
+                </div>
+                
+            	<div class="mws-panel grid_8">
+                	<div class="mws-panel-header">
+                    	<span class="mws-i-24 i-speech-bubble-2">Form Messages</span>
+                    </div>
+                    <div class="mws-panel-body">
+                    	<form class="mws-form" action="form_layouts.html">
+                        	<div class="mws-form-message error">
+                            	This is an error message
+                                <ul>
+                                	<li>You are too fast</li>
+                                    <li>You are too slow</li>
+                                </ul>
+                            </div>
+                        	<div class="mws-form-message success">
+                            	This is a success message
+                                <ol>
+                                	<li>You are too good</li>
+                                    <li>You are too smart</li>
+                                </ol>
+                            </div>
+                        	<div class="mws-form-message info">
+                            	This is an info message
+                            </div>
+                        	<div class="mws-form-message warning">
+                            	This is a warning message
+                            </div>
+                            
+                    		<div class="mws-form-block">
+                    			<div class="mws-form-row">
+                    				<label>Text field Error</label>
+                    				<div class="mws-form-item small">
+                    					<input type="text" class="mws-textinput error" />
+                                        <div class="mws-error">
+                                        	This field is required
+                                        </div>
+                    				</div>
+                    			</div>
+                                
+                    			<div class="mws-form-row">
+                    				<label>Select Error</label>
+                    				<div class="mws-form-item medium">
+                    					<select class="error">
+                    						<option>Option 1</option>
+                    						<option>Option 3</option>
+                    						<option>Option 4</option>
+                    						<option>Option 5</option>
+                    					</select>
+                                        <div class="mws-error">
+                                        	This field is required
+                                        </div>
+                    				</div>
+                    			</div>
+                                
+                    			<div class="mws-form-row">
+                    				<label>Textarea Error</label>
+                    				<div class="mws-form-item large">
+                    					<textarea rows="100%" cols="100%" class="error"></textarea>
+                                        <div class="mws-error">
+                                        	This field is required
+                                        </div>
+                    				</div>
+                    			</div>
+                                
+                    			<div class="mws-form-row">
+                    				<label>Radiobutton Error</label>
+                    				<div class="mws-form-item large">
+                                    	<ul class="mws-form-list">
+                                        	<li><input type="radio" name="gender" /> <label>Male</label></li>
+                                        	<li><input type="radio" name="gender" /> <label>Female</label></li>
+                                        </ul>
+                                        <div class="mws-error plain">
+                                        	This field is required
+                                        </div>
+                    				</div>
+                    			</div>
+                                
+                    			<div class="mws-form-row">
+                    				<label>Checkbox Error</label>
+                    				<div class="mws-form-item large">
+                                    	<ul class="mws-form-list">
+                                        	<li><input type="checkbox" name="gender" /> <label>Football</label></li>
+                                        	<li><input type="checkbox" name="gender" /> <label>Badminton</label></li>
+                                        </ul>
+                                        <div class="mws-error plain">
+                                        	This field is required
+                                        </div>
+                    				</div>
+                    			</div>
+                    		</div>
+                    		<div class="mws-button-row">
+                    			<input type="submit" value="Submit" class="mws-button red" />
+                    			<input type="reset" value="Reset" class="mws-button gray" />
+                    		</div>
+                    	</form>
+                    </div>
+                </div>
+                
+                <!-- Panels End -->
+            </div>
+            <!-- Inner Container End -->
+                       
+            <!-- Footer -->
+            <div id="mws-footer">
+            	Copyright Your Website 2012. All Rights Reserved.
+            </div>
+            
+        </div>
+        <!-- Main Container End -->
+        
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,1858 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>MWS Admin - Full Featured Admin Template</title>
+	
+	<meta name="description" content="Hi there, thank you for purchasing this theme. If you have any questions that are beyond the scope of this documentation, please feel free to contact me via the comment section or email me at &#109;&#97;&#105;&#109;&#97;&#105;&#114;&#101;&#108;&#64;&#121;&#97;&#104;&#111;&#111;&#46;&#99;&#111;&#109; Thanks.">
+	<meta name="author" content="maimairel">
+	<meta name="copyright" content="maimairel">
+	<meta name="generator" content="Documenter v1.6 http://rxa.li/documenter">
+	<meta name="date" content="2012-05-22T00:00:00+02:00">
+	
+	<link rel="stylesheet" href="css/documenter_style.css" media="all">
+	<link rel="stylesheet" href="css/custom.css" media="screen">
+
+	
+	<script src="js/jquery.1.6.4.js"></script>
+	
+	<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+	<script src="js/jquery.easing.js"></script>
+	
+    <!-- Syntax Highlighter -->
+    <script type="text/javascript" src="js/syntaxhighlighter/prettify/prettify.min.js"></script>
+    <link rel="stylesheet" href="js/syntaxhighlighter/prettify/prettify.min.css" media="screen" />
+    
+    <script type="text/javascript" src="js/syntaxhighlighter/jquery.syntaxhighlighter.min.js"></script>
+    <link rel="stylesheet" href="js/syntaxhighlighter/styles/style.min.css" media="screen" />
+    <link rel="stylesheet" href="js/syntaxhighlighter/styles/theme-balupton.css" media="screen" />
+    <link rel="stylesheet" href="js/syntaxhighlighter/styles/theme-google.css" media="screen" />
+
+	<script>document.createElement('section');var duration=500,easing='swing';</script>
+	<script src="js/script.js"></script>
+	
+	<style>
+		html{background-color:#EEEEEE;color:#383838;background-image:url(assets/images/image_2.png);background-repeat:repeat;background-attachment:scroll;}
+		::-moz-selection{background:#333636;color:#C5D52B;}
+		::selection{background:#333636;color:#C5D52B;}
+		#documenter_sidebar #documenter_logo{background-image:url(assets/images/image_9.png);}
+		a{color:#008C9E;}
+		hr{border-top:1px solid #D4D4D4;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ol a{background-color:#343838;color:#FFFFFF;background-image:url(assets/images/image_11.png);background-repeat:repeat;}
+		#documenter_sidebar ol a{-webkit-text-shadow:1px 1px 0px #494F4F;-moz-text-shadow:1px 1px 0px #494F4F;text-shadow:1px 1px 0px #494F4F;}
+		#documenter_sidebar ol{border-top:1px solid #212424;}
+		#documenter_sidebar ol a{border-top:1px solid #494F4F;border-bottom:1px solid #212424;color:#FFFFFF;}
+		#documenter_sidebar ol a:hover{background:#333636;color:#C5D52B;border-top:1px solid #333636;}
+		#documenter_sidebar ol a.current{background:#333636;color:#C5D52B;border-top:1px solid #333636;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body>
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ol id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+			<li><a href="#introduction">Introduction</a></li>
+			<li><a href="#complete_feature_list">Complete Feature List</a></li>
+			<li><a href="#html_structure">HTML Structure</a></li>
+			<li><a href="#css_files">CSS Files</a></li>
+			<li><a href="#javascript_files">JavaScript Files</a></li>
+			<li><a href="#using_icons">Using Icons</a></li>
+			<li><a href="#using_panels">Using Panels</a></li>
+			<li><a href="#using_widgets">Using Widgets</a></li>
+			<li><a href="#styling_forms">Styling Forms</a></li>
+			<li><a href="#using_buttons">Using Buttons</a></li>
+			<li><a href="#custom_plugins">Custom Plugins</a></li>
+			<li><a href="#using_plugins">Using Plugins</a></li>
+			<li><a href="#changelog">Changelog</a></li>
+			<li><a href="#credits">Credits</a></li>
+
+		</ol>
+		<div id="documenter_copyright">Copyright maimairel 2012<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v1.6</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover"><h1>MWS Admin - Full Featured Admin Template</h1><hr><ul><li>Created: 01/27/2012</li><li>latest Update: 05/22/2012</li><li>By: maimairel</li><li>Email: <a href="mailto:&#109;&#97;&#105;&#109;&#97;&#105;&#114;&#101;&#108;&#64;&#121;&#97;&#104;&#111;&#111;&#46;&#99;&#111;&#109;">&#109;&#97;&#105;&#109;&#97;&#105;&#114;&#101;&#108;&#64;&#121;&#97;&#104;&#111;&#111;&#46;&#99;&#111;&#109;</a></li></ul><p>Hi there, thank you for purchasing this theme. If you have any questions that are beyond the scope of this documentation, please feel free to contact me via the comment section or email me at &#109;&#97;&#105;&#109;&#97;&#105;&#114;&#101;&#108;&#64;&#121;&#97;&#104;&#111;&#111;&#46;&#99;&#111;&#109; Thanks.</p></section><section id="introduction">
+	<h3>Introduction</h3><hr class="notop">
+<h4>
+	Introduction</h4>
+<p>
+	MWS Admin is a responsive admin template build exclusively for sale at Theme Forest, and it aims to be full featured while keeping everything simple and straight forward.</p>
+<h4>
+	Key Features</h4>
+<p>
+	<img alt="" src="assets/images/image_1.png" style="margin-left: 8px; margin-right: 8px; margin-top: 8px; margin-bottom: 8px; float: right; width: 465px; height: 277px; ">Responsive design. This template looks great on any device, whether it&#39;s desktop, tablets or mobile phones.</p>
+<div style="clear:both">
+	&nbsp;</div>
+<p>
+	<img alt="" src="assets/images/image_13.jpg" style="margin-left: 8px; margin-right: 8px; margin-top: 8px; margin-bottom: 8px; float: left; width: 400px; height: 300px; ">This template&#39;s look and feel can be freely customized by changing the base colors, text colors and text glow color and opacity. Just choose the colors to your liking, or choose any from the predefined presets, and click &#39;Get CSS&#39; to get the necessary css code. This all can be done with the help of the included Themer.</p>
+<div style="clear:both">
+	&nbsp;</div>
+<p>&nbsp;
+	</p>
+<p>
+	<img alt="" src="assets/images/image_15.jpg" style="margin-left: 8px; margin-right: 8px; margin-top: 8px; margin-bottom: 8px; float: right; width: 400px; height: 300px; "></p>
+<p>
+	This template includes an unique, sleek toolbar, aiming to provide easy access to the most common functions you can find in an admin template, like deleting a user, accepting requests and many more...</p>
+<div style="clear:both">
+	&nbsp;</div>
+<p>
+	<img alt="" src="assets/images/image_7.jpg" style="margin-left: 8px; margin-right: 8px; margin-top: 8px; margin-bottom: 8px; float: left; width: 400px; height: 300px; ">MWS Admin includes 2000+ icons, selected carefully to suit everything you need in an admin template.</p>
+<div style="clear:both">
+	&nbsp;</div>
+<p>&nbsp;
+	</p>
+<p>
+	<img alt="" src="assets/images/image_8.jpg" style="margin-left: 8px; margin-right: 8px; margin-top: 8px; margin-bottom: 8px; float: right; width: 400px; height: 300px; "></p>
+<p>
+	Fully styled jQuery-UI widgets, which colors can be customized through the Themer.</p>
+<div style="clear:both">
+	&nbsp;</div>
+<p>
+	<img alt="" src="assets/images/image_3.jpg" style="margin-left: 8px; margin-right: 8px; margin-top: 8px; margin-bottom: 8px; float: left; width: 400px; height: 300px; ">Colorfull, interactive CSS 3 buttons</p>
+<div style="clear:both">
+	&nbsp;</div>
+<p>
+	<img alt="" src="assets/images/image_4.jpg" style="margin-left: 8px; margin-right: 8px; margin-top: 8px; margin-bottom: 8px; float: right; width: 400px; height: 300px; "></p>
+<p>
+	Simple and uniquely designed error page template</p>
+<div style="clear:both">
+	&nbsp;</div>
+</section>
+<section id="complete_feature_list">
+	<h3>Complete Feature List</h3><hr class="notop">
+<ul>
+	<li>
+		Fluid Layout</li>
+	<li>
+		Responsive Design (Looks great on desktops, tablets and phones)</li>
+	<li>
+		Two Columns</li>
+	<li>
+		Error Page Template</li>
+	<li>
+		MWS Themer, a feature to customize this template&#39;s look and feel to match your site</li>
+	<li>
+		2000+ Icons
+		<ul>
+			<li>
+				jQuery-UI Standard Icons</li>
+			<li>
+				IconSweets (<a href="http://www.yummygum.com">http://www.yummygum.com</a>)</li>
+			<li>
+				Led Icons (<a href="http://led24.de/iconset/">http://led24.de/iconset/</a>)</li>
+			<li>
+				Fatcow Icons (<a href="http://www.fatcow.com/free-icons">http://www.fatcow.com/free-icons</a>)</li>
+		</ul>
+	</li>
+	<li>
+		19 Plugins Integrated and Styled
+		<ul>
+			<li>
+				Colorpicker</li>
+			<li>
+				File Manager (elFinder)</li>
+			<li>
+				WYSIWYG Editor (elRTE)</li>
+			<li>
+				Flot Charts</li>
+			<li>
+				Calendar</li>
+			<li>
+				Growl Notifications</li>
+			<li>
+				Image Cropper (imgareaselect)</li>
+			<li>
+				File Uploader (plupload)</li>
+			<li>
+				Source Code Highlighter</li>
+			<li>
+				UI Spinner</li>
+			<li>
+				Tooltips</li>
+			<li>
+				Data Tables</li>
+			<li>
+				Dual List Box</li>
+			<li>
+				Styled File Inputs</li>
+			<li>
+				Input Placeholder for non HTML 5 browsers</li>
+			<li>
+				Validation Plugin (jquery.validate)</li>
+			<li>
+				jQuery Chosen Plugin</li>
+			<li>
+				jQuery prettyPhoto plugin</li>
+			<li>
+				jQuery-UI timepicker addon</li>
+		</ul>
+	</li>
+	<li>
+		One custom plugin
+		<ul>
+			<li>
+				mwsWizard, a custom build wizard plugin that is easy to use and integrate</li>
+		</ul>
+	</li>
+	<li>
+		Fully styled jQuery-UI widgets (works on touch devices)
+		<ul>
+			<li>
+				Autocomplete</li>
+			<li>
+				Datepicker</li>
+			<li>
+				Accordion</li>
+			<li>
+				Tabs</li>
+			<li>
+				Sliders</li>
+			<li>
+				Progress Bar</li>
+			<li>
+				Dialog</li>
+			<li>
+				Buttonsets</li>
+		</ul>
+	</li>
+	<li>
+		Message and Notification dropdown list</li>
+	<li>
+		Fluid 8 grid layout (responsive to grid level only, to accomodate small screens)</li>
+	<li>
+		Panel Styles
+		<ul>
+			<li>
+				Panel content with padding</li>
+			<li>
+				Panel content without padding</li>
+			<li>
+				Collapsible Panels</li>
+		</ul>
+	</li>
+	<li>
+		Four Build in widgets
+		<ul>
+			<li>
+				Fancy statistics style (with icons)</li>
+			<li>
+				Wizard navigation (can be integrated into forms, or anything you want)</li>
+			<li>
+				Integrated smart wizard style for wizard navigation&nbsp;</li>
+			<li>
+				Sleek, unique toolbar to fit all your needs</li>
+			<li>
+				Pagination</li>
+		</ul>
+	</li>
+	<li>
+		Colorful, interactive CSS 3 Buttons (red, blue, green, orange, black, gray)</li>
+	<li>
+		Website Summary List</li>
+	<li>
+		Form layouts and sizes
+		<ul>
+			<li>
+				Inline form layout</li>
+			<li>
+				Block form layout</li>
+			<li>
+				Columned form layout</li>
+			<li>
+				Three different input sizes (small, default, large)</li>
+			<li>
+				Error messages
+				<ul>
+					<li>
+						Below the form input</li>
+					<li>
+						As a summary on top of the form</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+</ul>
+</section>
+<section id="html_structure">
+	<h3>HTML Structure</h3><hr class="notop">
+<p>	This template has three sections, the header, the sidebar, and the main container.&nbsp;</p>
+<div>
+	<strong>Header Contains:</strong></div>
+<ul>	<li>		Logo</li>
+	<li>		Notifications and Messages</li>
+	<li>		User Functions (Logout, Change Password, Profile)</li>
+</ul>
+<div>
+	<strong>Sidebar Contains:</strong></div>
+<ul>	<li>		Search Box</li>
+	<li>		Main Navigation</li>
+	<li>		Container contains all the necessary codes</li>
+</ul>
+<p>	The header structure is as follows:</p>
+<pre class="highlight">
+&lt;div id=&quot;mws-header&quot; class=&quot;clearfix&quot;&gt;
+    &lt;!-- Logo Wrapper --&gt;
+    &lt;div id=&quot;mws-logo-container&quot;&gt;
+        &lt;div id=&quot;mws-logo-wrap&quot;&gt;
+            &lt;img src=&quot;images/logo.png&quot; alt=&quot;mws admin&quot; /&gt;
+         &lt;/div&gt;
+     &lt;/div&gt;
+
+     &lt;!-- User Area Wrapper --&gt;
+     &lt;div id=&quot;mws-user-tools&quot; class=&quot;clearfix&quot;&gt;
+        &lt;!-- User Notifications --&gt;
+        &lt;div id=&quot;mws-user-notif&quot; class=&quot;mws-dropdown-menu&quot;&gt;
+            &lt;a href=&quot;#&quot; class=&quot;mws-i-24 i-alert-2 mws-dropdown-trigger&quot;&gt;
+                 Notifications
+             &lt;/a&gt;
+             &lt;span class=&quot;mws-dropdown-notif&quot;&gt;35&lt;/span&gt;
+             &lt;div class=&quot;mws-dropdown-box&quot;&gt;
+                 &lt;div class=&quot;mws-dropdown-content&quot;&gt;
+                     &lt;ul class=&quot;mws-notifications&quot;&gt;
+                        &lt;!-- Here Goes all the notifications --&gt;
+                     &lt;/ul&gt;
+                     &lt;div class=&quot;mws-dropdown-viewall&quot;&gt;
+                        &lt;a href=&quot;#&quot;&gt;View All Notifications&lt;/a&gt;
+                     &lt;/div&gt;
+                 &lt;/div&gt;
+             &lt;/div&gt;
+         &lt;/div&gt;
+
+         &lt;!-- User Messages --&gt;
+         &lt;div id=&quot;mws-user-message&quot; class=&quot;mws-dropdown-menu&quot;&gt;
+             &lt;a href=&quot;#&quot; class=&quot;mws-i-24 i-message mws-dropdown-trigger&quot;&gt;Messages&lt;/a&gt;
+             &lt;span class=&quot;mws-dropdown-notif&quot;&gt;35&lt;/span&gt;
+             &lt;div class=&quot;mws-dropdown-box&quot;&gt;
+                 &lt;div class=&quot;mws-dropdown-content&quot;&gt;
+                     &lt;ul class=&quot;mws-messages&quot;&gt;
+                         &lt;!-- Here goes all the messages --&gt;
+                      &lt;/ul&gt;
+                     &lt;div class=&quot;mws-dropdown-viewall&quot;&gt;
+                         &lt;a href=&quot;#&quot;&gt;View All Messages&lt;/a&gt;
+                     &lt;/div&gt;
+                 &lt;/div&gt;
+             &lt;/div&gt;
+         &lt;/div&gt;
+
+        &lt;!-- User Functions --&gt;
+        &lt;div id=&quot;mws-user-info&quot; class=&quot;mws-inset&quot;&gt;
+            &lt;div id=&quot;mws-user-photo&quot;&gt;
+                &lt;img src=&quot;example/profile.jpg&quot; alt=&quot;User Photo&quot; /&gt;
+            &lt;/div&gt;
+            &lt;div id=&quot;mws-user-functions&quot;&gt;
+                &lt;div id=&quot;mws-username&quot;&gt;
+                    Hello, John Doe
+                &lt;/div&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Profile&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Change Password&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;index.php&quot;&gt;Logout&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+       &lt;!-- End User Functions --&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+<p>	The main structrure is as follows:</p>
+<pre class="highlight">
+    &lt;div id=&quot;mws-wrapper&quot;&gt;
+       &lt;!-- Necessary markup, do not remove --&gt;
+        &lt;div id=&quot;mws-sidebar-stitch&quot;&gt;&lt;/div&gt;
+        &lt;div id=&quot;mws-sidebar-bg&quot;&gt;&lt;/div&gt;
+        
+        &lt;!-- Sidebar Wrapper --&gt;
+        &lt;div id=&quot;mws-sidebar&quot;&gt;
+        
+            &lt;!-- Search Box --&gt;
+            &lt;div id=&quot;mws-searchbox&quot; class=&quot;mws-inset&quot;&gt;&lt;/div&gt;
+
+            &lt;!-- Main Navigation --&gt;
+            &lt;div id=&quot;mws-navigation&quot;&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Navigation&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;!-- End Navigation --&gt;
+
+        &lt;/div&gt;
+
+        &lt;!-- Container Wrapper --&gt;
+        &lt;div id=&quot;mws-container&quot; class=&quot;clearfix&quot;&gt;
+        
+            &lt;!-- Main Container --&gt;
+            &lt;div class=&quot;container&quot;&gt;
+            &lt;/div&gt;
+            &lt;!-- End Main Container --&gt;
+            
+            &lt;!-- Footer --&gt;
+            &lt;div id=&quot;mws-footer&quot;&gt;
+                Copyright Your Website 2012. All Rights Reserved.
+            &lt;/div&gt;
+            &lt;!-- End Footer --&gt;
+        &lt;/div&gt;
+        &lt;!-- End Container Wrapper --&gt;
+
+    &lt;/div&gt;</pre>
+<p>&nbsp;	</p>
+</section>
+<section id="css_files">
+	<h3>CSS Files</h3><hr class="notop">
+<p>
+	This template consists of <strong>base stylsheets,&nbsp;main stylesheets</strong>,<strong> font stylesheet, icon stylesheets, jquery-ui stylesheets</strong> and <strong>plugin stylesheets</strong>.</p>
+<h4>
+	Base Stylsheets</h4>
+<p>
+	Base stylesheets are required for this template. This includes the fluid grid system and the css to reset browser specific styles so this template will look the same on all browsers.</p>
+<ul>
+	<li>
+		fluid.css (the fluid grid system css)</li>
+	<li>
+		reset.css (css reset)</li>
+	<li>
+		text.css (typography)</li>
+</ul>
+<h4>
+	Main Stylesheets</h4>
+<p>
+	The main stylesheet is separated into several files, each mean to style a particular content of this template.</p>
+<p>
+	This is a list of the main stylesheets which are located in <strong>css/core</strong></p>
+<ul>
+	<li>
+		core.css (contains all the core styles navigation, sidebar, etc.)</li>
+	<li>
+		button.css (contains button styles)</li>
+	<li>
+		error.css (contains error page styles)</li>
+	<li>
+		form.css (contains form layout styles)</li>
+	<li>
+		gallery.css (contains gallery styles)</li>
+	<li>
+		login.css (contains login screen styles)</li>
+	<li>
+		misc.css (contains pagination, toolbar, wizard and summary styles)</li>
+	<li>
+		panels.css (contains panel styles)</li>
+	<li>
+		report.css (contains statistics and report styles)</li>
+	<li>
+		table.css (contains table styles)</li>
+	<li>
+		themer.css (contains Themer style, you may remove this)</li>
+</ul>
+<p>
+	It&#39;s recommended to include them all in all your pages, or just merge them into one file. Separation is meant to ease understanding and use of each file.</p>
+<p>
+	To ease inclusion of these files, just include <strong>css/mws.style.css</strong>, which already import all these css files</p>
+<pre class="highlight">
+@import url(&quot;core/login.css&quot;);
+@import url(&quot;core/core.css&quot;);
+@import url(&quot;core/panels.css&quot;);
+@import url(&quot;core/table.css&quot;);
+@import url(&quot;core/gallery.css&quot;);
+@import url(&quot;core/button.css&quot;);
+@import url(&quot;core/report.css&quot;);
+@import url(&quot;core/form.css&quot;);
+@import url(&quot;core/error.css&quot;);
+@import url(&quot;core/misc.css&quot;);
+@import url(&quot;core/themer.css&quot;); /* remove this line if you don&#39;t need the themer */</pre>
+<h4>
+	Font Stylesheets</h4>
+<p>
+	This template includes PTSans, a font from <a href="http://www.fontsquirrel.com/">Font Squirrel</a>&nbsp;which is used in the whole template.</p>
+<h4>
+	Icon Stylesheets</h4>
+<p>
+	This template includes three icon sizes (16 x 16, 24 x 24, and 32 x 32)</p>
+<p>
+	Each icon has its own class defined in each stylesheet in <strong>css/icons</strong></p>
+<h4>
+	jQuery-UI Stylesheets</h4>
+<p>
+	jQuery-UI stylesheets are located in <strong>css/jui</strong></p>
+<p>
+	Just include <strong>css/jui/jquery.ui.css</strong>&nbsp;to use the jquery-ui styles.</p>
+<h4>
+	Plugin Stylesheets</h4>
+<p>
+	Plugin stylesheets are located in each plugin folder in <strong>plugins/</strong>, more detailed explanation can be found in the plugins section.</p>
+</section>
+<section id="javascript_files">
+	<h3>JavaScript Files</h3><hr class="notop">
+<p>
+	This template has four build in javascript files:</p>
+<ul>
+	<li>
+		js/jquery-1.7.1.min.js (required javascript framework, jQuery)</li>
+	<li>
+		js/mws.js (the core , required javascript file to get the template working right)</li>
+	<li>
+		js/themer.js (the javascript file for this template&#39;s color chooser)</li>
+</ul>
+</section>
+<section id="using_icons">
+	<h3>Using Icons</h3><hr class="notop">
+<p>
+	This template contains 2000+ monochrome and color icons.</p>
+<p>
+	There are four types of icons you can use.</p>
+<h4>
+	jQuery-UI Icons</h4>
+<p>
+	This icon set is used in this template for jQuery-UI widgets.</p>
+<p>
+	You can use them yourself as a standary jQuery-UI icon by using the provided class name which can be found in jQuery-UI, eg:</p>
+<pre class="highlight">
+&lt;span class=&quot;ui-icon ui-icon-info&quot;&gt;&lt;/span&gt;</pre>
+<h4>
+	Led Icons (16 x 16)</h4>
+<p>
+	This icon set is mean to be used in this template for toolbars and wizard navigations.</p>
+<p>
+	To use this icon set yourself, you need to do the following steps:</p>
+<ol>
+	<li>
+		Create a HTML element
+		<pre class="highlight">
+&lt;div&gt;&lt;/div&gt;</pre>
+	</li>
+	<li>
+		Set class attribute to &#39;mws-ic-16&#39;
+		<pre class="highlight">
+&lt;div class=&quot;mws-ic-16&quot;&gt;&lt;/div&gt;</pre>
+	</li>
+	<li>
+		See the icons page in the demo, hover the icon you want, and remember its class</li>
+	<li>
+		Give the element that class
+		<pre class="highlight">
+&lt;div class=&quot;mws-ic-16 i-accept&quot;&gt;&lt;/div&gt;</pre>
+	</li>
+</ol>
+<p>&nbsp;
+	</p>
+<h4>
+	IconSweets (24 x 24)</h4>
+<p>
+	This icon set is mean to be used in this template for navigation and panel title icon.</p>
+<p>
+	To use this icon set yourself, you need to do the following steps:</p>
+<ol>
+	<li>
+		Create a HTML element
+		<pre class="highlight">
+&lt;div&gt;&lt;/div&gt;</pre>
+	</li>
+	<li>
+		Set class attribute to &#39;mws-i-24&#39;
+		<pre class="highlight">
+&lt;div class=&quot;mws-i-24&quot;&gt;&lt;/div&gt;</pre>
+	</li>
+	<li>
+		See the icons page in the demo, hover the icon you want, and remember its class</li>
+	<li>
+		Give the element that class
+		<pre class="highlight">
+&lt;div class=&quot;mws-i-24 i-abacus&quot;&gt;&lt;/div&gt;</pre>
+	</li>
+</ol>
+<p>&nbsp;
+	</p>
+<h4>
+	Fatcow Icons (32 x 32)</h4>
+<p>
+	This icon set is mean to be used in this template for statistics summary.</p>
+<p>
+	To use this icon set yourself, you need to do the following steps:</p>
+<ol>
+	<li>
+		Create a HTML element
+		<pre class="highlight">
+&lt;div&gt;&lt;/div&gt;</pre>
+	</li>
+	<li>
+		Set class attribute to &#39;mws-ic&#39;
+		<pre class="highlight">
+&lt;div class=&quot;mws-ic&quot;&gt;&lt;/div&gt;</pre>
+	</li>
+	<li>
+		See the icons page in the demo, hover the icon you want, and remember its class</li>
+	<li>
+		Give the element that class
+		<pre class="highlight">
+&lt;div class=&quot;mws-ic ic-accept&quot;&gt;&lt;/div&gt;</pre>
+	</li>
+</ol>
+<p>&nbsp;
+	</p>
+</section>
+<section id="using_panels">
+	<h3>Using Panels</h3><hr class="notop">
+<p>
+	This template&#39;s content area is divided into panels.</p>
+<p>
+	A panel can be collapsible and&nbsp;is used to display widgets, tables, forms, text, charts etc.</p>
+<p>
+	A panel is divided into grids using the fluid grid system (an extension of <a href="http://www.960.gs">960gs</a>).</p>
+<p>
+	Here is the general panel structure:</p>
+<pre class="highlight">
+&lt;!-- Panel Wrapper --&gt;
+&lt;div class=&quot;mws-panel grid_4&quot;&gt;
+    &lt;!-- Panel Header --&gt;
+    &lt;div class=&quot;mws-panel-header&quot;&gt;
+        &lt;!-- Panel Title --&gt;
+        &lt;span class=&quot;mws-i-24 i-text-styling&quot;&gt;Toolbar (Top)&lt;/span&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Panel Body --&gt;
+    &lt;div class=&quot;mws-panel-body&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+<h4>
+	<strong>Structure Explanation</strong></h4>
+<p>
+	<strong>Panel Wrapper</strong></p>
+<p>
+	Panel wrapper has a class attribute<strong> &#39;mws-panel&nbsp;</strong><strong>grid_4&#39;</strong></p>
+<p>
+	<strong>&#39;grid_4&#39;</strong> means that this panel is panel which fill 4 grids of the 8 available, so it&#39;s 50% of the container&#39;s width.</p>
+<p>
+	<strong>Panel Header</strong></p>
+<p>
+	Panel header has a class attribute &#39;mws-panel-header&#39;, and a panel header will contain the panel title</p>
+<p>
+	<strong>Panel Title</strong></p>
+<p>
+	Panel title is the title of the panel. A panel title can have an icon, which can be customized by the class attribute.</p>
+<p>
+	From the code above, the panel title has the class attribute <strong>&#39;mws-i-24 i-text-styling&#39;</strong>. This class attribute is explained at the icons section.</p>
+<p>
+	<strong>Panel Body</strong></p>
+<p>
+	Panel body contains everything. From widgets, tables, toolbars, charts, forms etc.</p>
+<h4>
+	Making Panels Collapsible</h4>
+<p>
+	To make a panel collapsible, add the css class<strong> &#39;mws-collapsible&#39;</strong> to the panel wrapper, eg:</p>
+<pre class="highlight">
+&lt;div class=&quot;mws-panel grid_4 mws-collapsible&quot;&gt;&lt;/div&gt;</pre>
+</section>
+<section id="using_widgets">
+	<h3>Using Widgets</h3><hr class="notop">
+<p>
+	This template has four build in widgets: <strong>toolbar, wizard navigation, pagination </strong>and <strong>statistic buttons</strong>.</p>
+<h4>
+	Toolbar</h4>
+<p>
+	Toolbar is an area that contains button links. With this toolbar, you can easily integrate any functions in your application. A toolbar can be placed at the top or the bottom of a panel.</p>
+<p>
+	<img alt="" src="assets/images/image_14.jpg" style="width: 300px; height: 158px; "></p>
+<p>
+	The HTML structure for toolbar is pretty straight forward, just an unordered list with links.</p>
+<pre class="highlight">
+&lt;div class=&quot;mws-panel-toolbar top clearfix&quot;&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;mws-ic-16 ic-accept&quot;&gt;Accept&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;mws-ic-16 ic-cross&quot;&gt;Reject&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;mws-ic-16 ic-printer&quot;&gt;Print&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;mws-ic-16 ic-arrow-refresh&quot;&gt;Renew&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;mws-ic-16 ic-edit&quot;&gt;Update&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+<p>
+	If you place the toolbar at the top, give it the class attribute <strong>&#39;top&#39;</strong>, else give it the class attribute <strong>&#39;bottom&#39;</strong>.</p>
+<p>
+	Notice that <strong>&#39;clearfix&#39;</strong> is required for this widget to look right.</p>
+<p>
+	To use this widget, you need to include <strong>css/core/misc.css</strong></p>
+<h4>
+	Wizard Navigation</h4>
+<p>
+	Wizard navigation can be used to show steps on some particular process, eg: registration, checkout proccess etc.</p>
+<p>
+	The goal of this wizard navigation is to provide style on steps navigation, which is commonly found in web application as an unordered list.</p>
+<p>
+	<img alt="" src="assets/images/image_16.jpg"></p>
+<p>
+	The HTML structure of wizard navigation is pretty straight forward:</p>
+<pre class="highlight">
+&lt;div class=&quot;mws-wizard-nav clearfix&quot;&gt;
+    &lt;ul&gt;
+        &lt;li&gt;
+            &lt;a class=&quot;mws-ic-16 ic-accept&quot; href=&quot;#&quot;&gt;Member Profile&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;current&quot;&gt;
+            &lt;a href=&quot;#&quot; class=&quot;mws-ic-16 ic-delivery&quot;&gt;Membership Stype&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;a class=&quot;mws-ic-16 ic-user&quot; href=&quot;#&quot;&gt;Confirmation&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</pre>
+<p>
+	Notice that&nbsp;<strong>&#39;clearfix&#39;</strong>&nbsp;is required for this widget to look right.</p>
+<p>
+	To use this widget, you need to include&nbsp;<strong>css/core/misc.css</strong></p>
+<p>
+	<strong>Notice: </strong>Since v1.6, there&#39;s a new jquery plugin added that can work seamlessly with this widget.</p>
+<h4>
+	Pagination</h4>
+<p>
+	Pagination is just a common pagination found in every website.</p>
+<p>
+	<img alt="" src="assets/images/image_10.jpg"></p>
+<p>
+	The HTML structure for pagination is an unordered list with links:</p>
+<pre class="highlight">
+&lt;div class=&quot;mws-pagination clearfix&quot;&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;mws-paging-button disabled&quot;&gt;First&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;mws-paging-button disabled&quot;&gt;Prev&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;mws-paging-button current&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;mws-paging-button&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;mws-paging-button&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;mws-paging-button&quot;&gt;4&lt;/a&gt;&lt;/li
+        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;mws-paging-button&quot;&gt;5&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;mws-paging-button&quot;&gt;Next&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;mws-paging-button&quot;&gt;Last&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</pre>
+<p>
+	Each link can have three states: <strong>disabled, active and current</strong> (see the class attributes on the code above).</p>
+<p>
+	Notice that&nbsp;<strong>&#39;clearfix&#39;</strong>&nbsp;is required for this widget to look right.</p>
+<p>
+	To use this widget, you need to include&nbsp;<strong>css/core/misc.css</strong></p>
+<h4>
+	Statistic Button</h4>
+<p>
+	Statistic button is a clickable widget to display statistical values like new members, registrations, etc.</p>
+<p>
+	<img alt="" src="assets/images/image_12.jpg"></p>
+<p>
+	The HTML structure is a wrapper containing links with text and icons:</p>
+<pre class="highlight">
+&lt;div class=&quot;mws-report-container clearfix&quot;&gt;
+
+    &lt;!-- Link --&gt;
+    &lt;a class=&quot;mws-report&quot; href=&quot;#&quot;&gt;
+
+        &lt;!-- Icon --&gt;
+        &lt;span class=&quot;mws-report-icon mws-ic ic-building&quot;&gt;&lt;/span&gt;
+
+        &lt;!-- Content --&gt;
+        &lt;span class=&quot;mws-report-content&quot;&gt;
+            &lt;!-- Title --&gt;
+            &lt;span class=&quot;mws-report-title&quot;&gt;Floors Climbed&lt;/span&gt;
+            &lt;!-- Value --&gt;
+            &lt;span class=&quot;mws-report-value&quot;&gt;324&lt;/span&gt;
+        &lt;/span&gt;
+    &lt;/a&gt;
+&lt;/div&gt;</pre>
+<p>
+	To use this widget, you need to include&nbsp;<strong>css/core/report.css</strong></p>
+<p>
+	The icon of each button can be customized by editing this line:</p>
+<pre class="highlight">
+&lt;!-- Icon --&gt;
+&lt;span class=&quot;mws-report-icon mws-ic ic-building&quot;&gt;&lt;/span&gt;</pre>
+<p>
+	which is explained on <strong>&#39;using icons&#39;</strong> section.</p>
+</section>
+<section id="styling_forms">
+	<h3>Styling Forms</h3><hr class="notop">
+<p>
+	Forms, can be styled in three ways:</p>
+<ul>
+	<li>
+		As an inline form, which has labels on the left side of the input</li>
+	<li>
+		As a block form, which has labels on top of the input</li>
+	<li>
+		As a columned form, which has form inputs in columns</li>
+</ul>
+<p>
+	<img alt="" src="assets/images/image_6.jpg"></p>
+<p>
+	Form HTML Structure:</p>
+<pre class="highlight">
+&lt;form class=&quot;mws-form&quot;&gt;
+    &lt;div class=&quot;mws-form-block&quot;&gt;
+        &lt;div class=&quot;mws-form-row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;
+            &lt;div class=&quot;mws-form-item&quot;&gt;
+                &lt;textarea&gt;&lt;/textarea&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;mws-button-row&quot;&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</pre>
+<p>
+	The markup above, will result in a block form layout. To get inline form layout, change</p>
+<pre class="highlight">
+&lt;div class=&quot;mws-form-block&quot;&gt;&lt;/div&gt;
+</pre>
+<p>
+	to</p>
+<pre class="highlight">
+&lt;div class=&quot;mws-form-inline&quot;&gt;&lt;/div&gt;</pre>
+<p>
+	By not wrapping the form rows with either <strong>&#39;mws-form-block&#39;</strong> or <strong>&#39;mws-form-inline&#39;</strong>, the form will be a block form, which is the default layout.</p>
+<h4>
+	Using Columned Form</h4>
+<p>
+	Columned form divides the area in eight columns, so you can have columns in an eight columns base (col-1-8, col-2-8, col-3-8, col-4-8, col-5-8, col-6-8, col-7-8, col-8-8).</p>
+<p>
+	To use the columned layout, you have to replace each form row with a column, wrap it in a div with the class &#39;<strong>mws-form-cols</strong>&#39;, so the code would look like this:</p>
+<pre class="highlight">
+&lt;div class=&quot;mws-form-cols clearfix&quot;&gt;
+    &lt;div class=&quot;mws-form-col-1-8&quot;&gt;
+        &lt;label&gt;Column 1/8&lt;/label&gt;
+        &lt;div class=&quot;mws-form-item large&quot;&gt;
+            &lt;input type=&quot;text&quot; class=&quot;mws-textinput&quot; /&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;mws-form-col-1-8&quot;&gt;
+        &lt;label&gt;Column 1/8&lt;/label&gt;
+        &lt;div class=&quot;mws-form-item large&quot;&gt;
+            &lt;input type=&quot;text&quot; class=&quot;mws-textinput&quot; /&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;mws-form-col-1-8&quot;&gt;
+        &lt;label&gt;Column 1/8&lt;/label&gt;
+        &lt;div class=&quot;mws-form-item large&quot;&gt;
+            &lt;input type=&quot;text&quot; class=&quot;mws-textinput&quot; /&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;mws-form-col-1-8&quot;&gt;
+        &lt;label&gt;Column 1/8&lt;/label&gt;
+        &lt;div class=&quot;mws-form-item large&quot;&gt;
+            &lt;input type=&quot;text&quot; class=&quot;mws-textinput&quot; /&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;mws-form-col-1-8&quot;&gt;
+        &lt;label&gt;Column 1/8&lt;/label&gt;
+        &lt;div class=&quot;mws-form-item large&quot;&gt;
+            &lt;input type=&quot;text&quot; class=&quot;mws-textinput&quot; /&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;mws-form-col-1-8&quot;&gt;
+        &lt;label&gt;Column 1/8&lt;/label&gt;
+        &lt;div class=&quot;mws-form-item large&quot;&gt;
+            &lt;input type=&quot;text&quot; class=&quot;mws-textinput&quot; /&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;mws-form-col-1-8&quot;&gt;
+        &lt;label&gt;Column 1/8&lt;/label&gt;
+        &lt;div class=&quot;mws-form-item large&quot;&gt;
+            &lt;input type=&quot;text&quot; class=&quot;mws-textinput&quot; /&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;mws-form-col-1-8&quot;&gt;
+        &lt;label&gt;Column 1/8&lt;/label&gt;
+        &lt;div class=&quot;mws-form-item large&quot;&gt;
+            &lt;input type=&quot;text&quot; class=&quot;mws-textinput&quot; /&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+<h4>
+	Using Fieldsets</h4>
+<p>
+	You can also wrap the form in a <strong>&#39;fieldset&#39;</strong> in place of a <strong>&#39;div&#39;:</strong></p>
+<pre class="highlight">
+&lt;form class=&quot;mws-form&quot;&gt;
+    &lt;fieldset class=&quot;mws-form-block&quot;&gt;
+        &lt;legend&gt;Form Legend&lt;/legend&gt;
+        &lt;div class=&quot;mws-form-row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;
+            &lt;div class=&quot;mws-form-item&quot;&gt;
+                &lt;textarea&gt;&lt;/textarea&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/fieldset&gt;
+    &lt;div class=&quot;mws-button-row&quot;&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</pre>
+<h4>
+	Mixing Block and Inline Form</h4>
+<p>
+	You can have a form with mixed layouts by just giving a form row the class&nbsp;<strong>&#39;mws-form-block&#39;</strong>&nbsp;or&nbsp;<strong>&#39;mws-form-inline&#39;.</strong></p>
+<pre class="highlight">
+&lt;form class=&quot;mws-form&quot;&gt;
+    &lt;div class=&quot;mws-form-row mws-form-block&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;mws-form-row mws-form-inline&quot;&gt;&lt;/div&gt;
+&lt;/form&gt;</pre>
+<h4>
+	Form Input Size</h4>
+<p>
+	Form inputs can have three sizes, small, medium and large. Large is the default size for form inputs.</p>
+<p>
+	You can control the input size by giving the class attribute <strong>&#39;small&#39;, &#39;medium&#39;, or &#39;large&#39;</strong> to the form item wrapper.</p>
+<pre class="highlight">
+&lt;div class=&quot;mws-form-item large&quot;&gt;
+    &lt;input type=&quot;text&quot; /&gt;
+&lt;/div&gt;</pre>
+<h4>
+	Form List</h4>
+<p>
+	You can create a vertical list of form elements like radio buttons, checkboxes and event text fields using unordered list with the class attribute <strong>&#39;mws-form-list&#39;</strong></p>
+<pre class="highlight">
+&lt;form class=&quot;mws-form&quot;&gt;
+    &lt;div class=&quot;mws-form-block&quot;&gt;
+        &lt;div class=&quot;mws-form-row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;
+            &lt;div class=&quot;mws-form-item&quot;&gt;
+                &lt;ul class=&quot;mws-form-list&quot;&gt;
+                    &lt;li&gt;&lt;input type=&quot;radio&quot; name=&quot;gender&quot; /&gt; &lt;label&gt;Male&lt;/label&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;input type=&quot;radio&quot; name=&quot;gender&quot; /&gt; &lt;label&gt;Female&lt;/label&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;mws-button-row&quot;&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</pre>
+<p>
+	An inline, horizontal list can also be created by giving an additional class name, <strong>&#39;inline&#39;</strong> to the unordered list.</p>
+<pre class="highlight">
+&lt;ul class=&quot;mws-form-list inline&quot;&gt;&lt;/ul&gt;
+</pre>
+<h4>
+	Form Input Styling</h4>
+<p>
+	For textarea, select, radio and checkbox fields, you don&#39;t have to add any class attribute.</p>
+<p>
+	For text fields, you&#39;ll have to add the css class <strong>&#39;mws-textinput&#39;</strong> to get them styled.</p>
+<h4>
+	Form Messages</h4>
+<p>
+	Form messages can be an info message, an error message, a warning message and a success message.</p>
+<p>
+	<img alt="" src="assets/images/image_5.jpg" style="width: 320px; height: 269px; "></p>
+<p>
+	The base css class for all messages is <strong>&#39;mws-form-message&#39;</strong>, just add <strong>&#39;error&#39;, &#39;success&#39;, &#39;info&#39;, </strong>or <strong>&#39;warning&#39;</strong> to get different error messages.</p>
+<p>
+	HTML structure:</p>
+<pre class="highlight">
+&lt;div class=&quot;mws-form-message error&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;mws-form-message success&quot;&gt;&lt;/div&gt;</pre>
+<h4>
+	Stylesheet Location</h4>
+<p>
+	The stylesheet of the form and its messages can be found in&nbsp;<strong>css/core/form.css</strong></p>
+</section>
+<section id="using_buttons">
+	<h3>Using Buttons</h3><hr class="notop">
+<p>
+	Buttons are styled with CSS3 to be interactive and good looking.</p>
+<p>
+	<img alt="" src="assets/images/image_3.jpg"></p>
+<ul>
+	<li>
+		There are 6 button colors: red, blue, green, orange, black and gray.</li>
+	<li>
+		You can always add new colors by editing <strong>css/core/buttons.css</strong></li>
+	<li>
+		To get the button style, just add the css class &#39;mws-button&#39;, to any clickable element you want like <strong>&#39;a&#39;, &#39;button&#39;, &#39;input&#39;</strong></li>
+	<li>
+		There are three different button sizes: <strong>large, default </strong>and<strong> small</strong></li>
+</ul>
+<h4>
+	Code Example</h4>
+<pre class="highlight">
+&lt;button class=&quot;mws-button red small&quot;&gt;Click Me!&lt;/button&gt;
+&lt;input type=&quot;submit&quot; class=&quot;mws-button blue&quot; value=&quot;Submit&quot; /&gt;</pre>
+<p>&nbsp;
+	</p>
+</section>
+<section id="custom_plugins">
+	<h3>Custom Plugins</h3><hr class="notop">
+<p>
+	Since v1.6, a new custom plugin has been integrated into this template.</p>
+<h4>
+	mwsWizard</h4>
+<p>
+	mwsWizard is a custom build jQuery plugin that&#39;s intended to work with the build in wizard navigation widget.</p>
+<p>
+	This plugin will transform a set of elements into a step-by-step wizard.</p>
+<p>
+	What this plugin does is hiding the inactive steps, help validating the form before proceeding, add and control the form buttons on the bottom. The navigation on top will get automatically styled between steps.</p>
+<p>
+	Validation is possible using this plugin along with jquery validation plugin, please refer the demo pages to see how it works :)</p>
+<h5>
+	Plugin Integration</h5>
+<p>
+	Using this plugin requires you to include&nbsp;<strong>/js/core/mws.wizard.js</strong>, without any additional stylesheets because the wizard navigation itself is already integrated into the core styles.</p>
+<ol>
+	<li>
+		Create your form, wrap the elements from the next steps inside this form<br>
+		<pre class="highlight">
+&lt;form id=&quot;mws-wizard-form&quot; class=&quot;mws-form&quot;&gt;
+&lt;/form&gt;</pre>
+	</li>
+	<li>
+		Start by declaring the wizard navigation as instructed on the <a href="#using_widgets">Using Widgets</a> section, and make the anchor tags point to the step id&#39;s. Example:<br>
+		<pre class="highlight">
+&lt;div class=&quot;mws-wizard-nav clearfix&quot;&gt;
+    &lt;ul&gt;
+        &lt;li&gt;
+            &lt;a class=&quot;mws-ic-16 ic-accept&quot; href=&quot;#step-1&quot;&gt;Member Profile&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;a class=&quot;mws-ic-16 ic-delivery&quot; href=&quot;#step-2&quot;&gt;Membership Stype&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;a class=&quot;mws-ic-16 ic-user&quot; href=&quot;#step-3&quot;&gt;Confirmation&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+	</li>
+	<li>
+		After that, define the step containers, which are fieldsets by default
+		<pre class="highlight">
+&lt;form &lt;fieldset id=&quot;step-1&quot; class=&quot;mws-form-inline&quot;&gt;
+&lt;/fieldset&gt;
+&lt;fieldset id=&quot;step-2&quot; class=&quot;mws-form-inline&quot;&gt;
+&lt;/fieldset&gt;
+&lt;fieldset id=&quot;step-3&quot; class=&quot;mws-form-inline&quot;&gt;
+&lt;/fieldset&gt;</pre>
+	</li>
+	<li>
+		Next, fire up the jquery-plugin, and you&#39;re done :)<br>
+		<pre class="highlight">
+$(&quot;#mws-wizard-form&quot;).mwsWizard();</pre>
+	</li>
+</ol>
+<p>
+	<strong>Note:</strong> on the example above, the links on the anchor tags refer to the id&#39;s of the fieldsets, make sure that you don&#39;t miss this.</p>
+<p>
+	This plugin is customizable, you can choose which element you want as steps, change the button text etc. it&#39;s all configurable with the following options:</p>
+<table>
+	<tbody>
+		<tr>
+			<th>
+				Option Name</th>
+			<th>
+				Default</th>
+			<th>
+				Description</th>
+		</tr>
+		<tr>
+			<td>
+				element</td>
+			<td>
+				fieldset</td>
+			<td>
+				The elements inside the form to treat as form steps</td>
+		</tr>
+		<tr>
+			<td>
+				navigationContainer</td>
+			<td>
+				.mws-wizard-nav</td>
+			<td>
+				The container where the navigation is wrapped in</td>
+		</tr>
+		<tr>
+			<td>
+				buttonContainerClass</td>
+			<td>
+				mws-button-row</td>
+			<td>
+				The class name for the button container</td>
+		</tr>
+		<tr>
+			<td>
+				nextButtonClass</td>
+			<td>
+				mws-button red</td>
+			<td>
+				The class name for the next button</td>
+		</tr>
+		<tr>
+			<td>
+				prevButtonClass</td>
+			<td>
+				mws-button gray left</td>
+			<td>
+				The class name for the prev button</td>
+		</tr>
+		<tr>
+			<td>
+				submitButtonClass</td>
+			<td>
+				mws-button green</td>
+			<td>
+				The class name for the submit button</td>
+		</tr>
+		<tr>
+			<td>
+				nextButtonLabel</td>
+			<td>
+				&#39;Next&#39;</td>
+			<td>
+				The text on the next button</td>
+		</tr>
+		<tr>
+			<td>
+				prevButtonLabel</td>
+			<td>
+				&#39;Prev&#39;</td>
+			<td>
+				The text on the prev button</td>
+		</tr>
+		<tr>
+			<td>
+				submitButtonLabel</td>
+			<td>
+				&#39;Submit&#39;</td>
+			<td>
+				The text on the submit button</td>
+		</tr>
+		<tr>
+			<td>
+				forwardOnly</td>
+			<td>
+				true</td>
+			<td>
+				Whether backwards navigation is not allowed</td>
+		</tr>
+		<tr>
+			<td>
+				onLeaveStep</td>
+			<td>
+				null</td>
+			<td>
+				The function to call each time leaving a step</td>
+		</tr>
+		<tr>
+			<td>
+				onShowStep</td>
+			<td>
+				null</td>
+			<td>
+				The function to call each time a step is shown</td>
+		</tr>
+		<tr>
+			<td>
+				onBeforeSubmit</td>
+			<td>
+				null</td>
+			<td>
+				The function to call before submitting the form</td>
+		</tr>
+	</tbody>
+</table>
+<p>&nbsp;
+	</p>
+</section>
+<section id="using_plugins">
+	<h3>Using Plugins</h3><hr class="notop">
+<p>
+	There are 15 plugins included in this template:</p>
+<ul>
+	<li>
+		Colorpicker</li>
+	<li>
+		File Manager (elFinder)</li>
+	<li>
+		WYSIWYG Editor (elRTE)</li>
+	<li>
+		Flot Charts</li>
+	<li>
+		Calendar</li>
+	<li>
+		Growl Notifications</li>
+	<li>
+		Image Cropper (imgareaselect)</li>
+	<li>
+		File Uploader (plupload)</li>
+	<li>
+		Source Code Highlighter</li>
+	<li>
+		UI Spinner</li>
+	<li>
+		Tooltips</li>
+	<li>
+		Data Tables</li>
+	<li>
+		Dual List Box</li>
+	<li>
+		Styled File Inputs</li>
+	<li>
+		Input Placeholder for non HTML 5 browsers</li>
+	<li>
+		Validation Plugin (jquery.validate)</li>
+	<li>
+		Pretty Photo plugin</li>
+	<li>
+		jQuery Chosen Plugin</li>
+	<li>
+		jQuery-UI Time Picker</li>
+</ul>
+<p>
+	All plugins are styled to work together with this template, so using the provided css files is recommended.</p>
+<h4>
+	Colorpicker</h4>
+<p>
+	Colorpicker is jQuery plugin by <a href="http://www.eyecon.ro/colorpicker/">eyecon</a>, it&#39;s a simple component to select color in the same way you select color in Adobe Photoshop.</p>
+<p>
+	To use colorpicker, you have to attach the necessary javascript and css files</p>
+<pre class="highlight">
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.7.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/colorpicker/colorpicker.js&quot;&gt;&lt;/script&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;plugins/colorpicker/colorpicker.css&quot; /&gt;</pre>
+<p>
+	There&#39;s already a css class for text input build in this template, you can use it to get a text field with a colorpicker icon on the right side. The css class is <strong>&#39;mws-colorpicker&#39;</strong>.</p>
+<pre class="highlight">
+&lt;input type=&quot;text&quot; class=&quot;mws-textinput mws-colorpicker&quot; /&gt;</pre>
+<p>
+	For more info about this plugin, please visit&nbsp;<a href="http://www.eyecon.ro/colorpicker/">http://www.eyecon.ro/colorpicker/</a></p>
+<h4>
+	File Manager (elFinder)</h4>
+<p>
+	elFinder&nbsp;is an open-source file manager for web, written in JavaScript using jQuery UI. As you can see its creation is inspired by simplicity and convenience of Finder program used in Mac OS X operating system.</p>
+<p>
+	To use elFinder, you&#39;ll have to attach jQuery-UI, the necessary javascript and css files, and configure it to your liking.</p>
+<pre class="highlight">
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.7.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-ui.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/elfinder/js/elfinder.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/jui/jquery.ui.css&quot; media=&quot;screen&quot; /&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;plugins/elfinder/css/elfinder.css&quot; /&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+    $(document).ready(function() {
+        $(&quot;#elfinder&quot;).elfinder({
+            url : &#39;plugins/elfinder/connectors/php/connector.php&#39;,&nbsp;
+            lang : &#39;en&#39;,
+            docked : true,
+            height: 300
+        });
+    });
+&lt;/script&gt;
+
+&lt;div id=&quot;elfinder&quot;&gt;&lt;/div&gt;</pre>
+<p>
+	elFinder also requires a connector to communicate with the server. There are two connectors included in elFinder, one for <strong>PHP </strong>and one for <strong>python</strong>. This connector is configured via the &quot;url&quot; option of the plugin (see above).</p>
+<p>
+	For more info about this plugin, please visit&nbsp;<a href="http://elrte.org/elfinder">http://elrte.org/elfinder</a></p>
+<h4>
+	WYSIWYG (elRTE)</h4>
+<p>
+	elRTE is an open-source WYSIWYG HTML-editor written in JavaScript using jQuery UI. It features rich text editing, options for changing its appearance, style and many more.</p>
+<p>
+	To use elRTE, you&#39;ll have to attach jQuery-UI, the necessary javascript and css files, and configure it to your liking.</p>
+<div>
+	<pre class="highlight">
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.7.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-ui.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/elrte/js/elrte.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;plugins/elrte/css/elrte.full.css&quot; /&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+    var opts = {
+        cssClass : &#39;el-rte&#39;,
+        height &nbsp; : 300,
+        toolbar &nbsp;: &#39;normal&#39;,
+        cssfiles : [&#39;plugins/elrte/css/elrte-inner.css&#39;]
+    };
+    $(&#39;#elrte&#39;).elrte(opts); 
+&lt;/script&gt;
+
+&lt;div id=&quot;elrte&quot;&gt;&lt;/div&gt;</pre>
+</div>
+<p>
+	For more info about this plugin, please visit&nbsp;<a href="http://elrte.org/elfinder">http://elrte.org/</a></p>
+<h4>
+	Flot Charts</h4>
+<p>
+	Flot is a pure Javascript plotting library for jQuery. It produces graphical plots of arbitrary datasets on-the-fly client-side.</p>
+<p>
+	The focus is on simple usage (all settings are optional), attractive looks and interactive features like zooming and mouse tracking.</p>
+<p>
+	To use flot, you&#39;ll have to add the necessary javascript file, and <strong>excanvas.js</strong> for browsers lower than IE 9.</p>
+<pre class="highlight">
+&lt;!--[if lt IE 9]&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/flot/excanvas.min.js&quot;&gt;&lt;/script&gt;
+&lt;![endif]--&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.7.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/flot/jquery.flot.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/flot/jquery.flot.pie.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/flot/jquery.flot.stack.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/flot/jquery.flot.resize.min.js&quot;&gt;&lt;/script&gt;</pre>
+<p>
+	How to configure and use flot can be read on its website (<a href="http://code.google.com/p/flot/">http://code.google.com/p/flot/</a>)</p>
+<p>
+	The example on this template can also be used as a starting point.</p>
+<h4>
+	Full Calendar</h4>
+<p>
+	FullCalendar is a jQuery plugin that provides a full-sized, drag &amp; drop calendar like the one below. It uses AJAX to fetch events on-the-fly for each month and is easily configured to use your own feed format (an extension is provided for Google Calendar).</p>
+<p>
+	To use full calendar you need to attach the necessary javascript and css files:</p>
+<pre class="highlight">
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.7.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/fullcalendar/fullcalendar.min.js&quot;&gt;&lt;/script&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;plugins/fullcalendar/fullcalendar.css&quot; media=&quot;screen&quot; /&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;plugins/fullcalendar/fullcalendar.print.css&quot; media=&quot;print&quot; /&gt;</pre>
+<p>
+	For more info about this plugin, please visit&nbsp;<a href="http://arshaw.com/fullcalendar/">http://arshaw.com/fullcalendar/</a></p>
+<h4>
+	Growl Notifications (jGrowl)</h4>
+<p>
+	jGrowl is an unobtrusive notification system for web applications, similar to Growl for Mac OS X. The idea is simple, deliver notifications to the end user in a noticeable way that doesn&#39;t obstruct the work flow and yet keeps the user informed.</p>
+<p>
+	To use jGrowl, you need to attach the necessary javascript and css files:</p>
+<pre class="highlight">
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.7.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/jgrowl/jquery.jgrowl.js&quot;&gt;&lt;/script&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;plugins/jgrowl/jquery.jgrowl.css&quot; media=&quot;screen&quot; /&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+     $.jGrowl(&quot;Hello World!&quot;, {position: &quot;bottom-right&quot;});
+&lt;/script&gt;</pre>
+<p>
+	For more info about this plugin, please visit&nbsp;<a href="https://bitbucket.org/stanlemon/jgrowl">https://bitbucket.org/stanlemon/jgrowl</a></p>
+<h4>
+	Image Cropper (imgareaselect)</h4>
+<p>
+	imgAreaSelect is a jQuery plugin for selecting a rectangular area of an image. It allows web developers to easily implement image cropping functionality, as well as other user interface features, such as photo notes (like those on Flickr).</p>
+<p>
+	To use&nbsp;imgAreaSelect, you need to attach the necessary javascript and css files:</p>
+<pre class="highlight">
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.7.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/imgareaselect/jquery.imgareaselect.min.js&quot;&gt;&lt;/script&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;plugins/imgareaselect/css/imgareaselect-default.css&quot; media=&quot;screen&quot; /&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+$(document).ready(function () {
+    $(&#39;img#photo&#39;).imgAreaSelect({
+        handles: true,
+        onSelectEnd: someFunction
+    });
+});
+
+&lt;/script&gt;</pre>
+<p>
+	For more info about this plugin, please visit&nbsp;<a href="http://odyniec.net/projects/imgareaselect/">http://odyniec.net/projects/imgareaselect/</a></p>
+<p>
+	There&#39;s also a tutorial for submitting the image coordinates to the server, you can find it here:</p>
+<p>
+	<a href="http://odyniec.net/projects/imgareaselect/examples-callback.html#submitting-selection-coordinates">http://odyniec.net/projects/imgareaselect/examples-callback.html#submitting-selection-coordinates</a></p>
+<h4>
+	File Uploader (plupload)</h4>
+<p>
+	The developers of TinyMCE brings you Plupload, a highly usable upload handler for your Content Management Systems or similar. Plupload is currently separated into a Core API and a jQuery upload queue widget this enables you to either use it out of the box or write your own custom implementation.</p>
+<p>
+	To use plupload, you need to attach the necessary javascript and css files, configure your backend and initialize the plugin.</p>
+<div>
+	<div>
+		<pre class="highlight">
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.7.1.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/plupload/plupload.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/plupload/plupload.flash.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/plupload/plupload.html4.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/plupload/plupload.html5.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/plupload/jquery.plupload.queue/jquery.plupload.queue.js&quot;&gt;&lt;/script&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;plugins/plupload/jquery.plupload.queue.css&quot; /&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+    $(document).ready(function() {
+        $(&quot;#uploader&quot;).pluploadQueue({
+            // General settings
+            runtimes : &#39;html4, html5&#39;,&nbsp;
+            url : &#39;../upload.php&#39;,
+            max_file_size : &#39;1000mb&#39;,
+            max_file_count: 20, // user can add no more then 20 files at a time
+            chunk_size : &#39;1mb&#39;,
+            unique_names : true,
+            multiple_queues : true,
+            // Resize images on clientside if we can
+            resize : {width : 320, height : 240, quality : 90},
+            // Rename files by clicking on their titles
+            rename: true,
+            // Sort files
+            sortable: true,
+            // Specify what files to browse for
+            filters : [
+                {title : &quot;Image files&quot;, extensions : &quot;jpg,gif,png&quot;},
+                {title : &quot;Zip files&quot;, extensions : &quot;zip,avi&quot;}
+            ]
+        });
+    });
+&lt;/script&gt;
+&lt;div id=&quot;uploader&quot;&gt;
+    &lt;p&gt;You browser doesn&#39;t have Flash, Silverlight, Gears, BrowserPlus or HTML5 support.&lt;/p&gt;
+&lt;/div&gt;</pre>
+	</div>
+</div>
+<p>
+	For more info about this plugin, please visit&nbsp;<a href="http://www.plupload.com/">http://www.plupload.com/</a></p>
+<h4>
+	Sourcerer (Syntax Highlighter)</h4>
+<p>
+	Sourcerer is AndBeyond&#39;s first official jQuery plugin available to download. Its an extremely easy to use yet powerful source code highlighter and viewer. It is able to highlight your html, javascript, css, and php in a simple JS file that is less than 150 lines.</p>
+<p>
+	To use sourcerer, you need to add the necessary javascript and css files</p>
+<pre class="highlight">
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.7.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/sourcerer/Sourcerer-1.2.js&quot;&gt;&lt;/script&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;plugins/sourcerer/Sourcerer-1.2.css&quot; media=&quot;screen&quot; /&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+    $(document).ready(function() {
+        $(&quot;.mws-code-html&quot;).sourcerer(&#39;html&#39;);
+    });
+&lt;/script&gt;
+
+&lt;pre class=&quot;mws-code-html&quot;&gt;
+&lt;/pre&gt;</pre>
+<p>
+	For more info about this plugin, please visit&nbsp;<a href="http://www.andbeyonddesign.com/Sourcerer">http://www.andbeyonddesign.com/Sourcerer</a></p>
+<h4>
+	jQuery-UI Spinner</h4>
+<p>&nbsp;
+	</p>
+<div>
+	jQuery.ui.spinner is based upon jQuery UI 1.8 &lt;http://ui.jquery.com&gt;, and provides a new&nbsp;spinner widget that can be added to any text box. It supports both mouse and keyboard input, and validates input directly into the text box.&nbsp;It requires only minimal CSS to be supplied, mostly relying on the CSS built into the jQuery UI&nbsp;framework.</div>
+<p>
+	This jQuery plugin has been modified by me, to utilize the jquery mousewheel plugin instead of using its own code because it wil then not work in jQuery &gt; 1.6</p>
+<p>
+	To use UI Spinner, you need to add the necessary javascript and css files:</p>
+<pre class="highlight">
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.7.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-ui.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/spinner/jquery.mousewheel.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/spinner/ui.spinner.js&quot;&gt;&lt;/script&gt;
+
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;plugins/spinner/ui.spinner.css&quot; media=&quot;screen&quot; /&gt;
+</pre>
+<div>
+	jquery mousewheel plugin is needed for the spinner to support mousewheel.</div>
+<div>
+	For more info about this plugin, you can check it here:&nbsp;<a href="https://github.com/btburnett3/jquery.ui.spinner">https://github.com/btburnett3/jquery.ui.spinner</a></div>
+<h4>
+	Tooltips (jQuery Tipsy)</h4>
+<p>
+	Tipsy is a jQuery plugin for creating a Facebook-like tooltips effect based on an anchor tag&#39;s title attribute.</p>
+<p>
+	This template integrates tooltips internally, so you only need to add the necessary javascript and css files and define the right css class for each element.</p>
+<pre class="highlight">
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.7.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/tipsy/jquery.tipsy.js&quot;&gt;&lt;/script&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;plugins/tipsy/tipsy.css&quot; media=&quot;screen&quot; /&gt;</pre>
+<p>
+	This template has eight build in classes, just add one on your element, and that element will display the tooltip when hovered.</p>
+<table border="0" cellpadding="1" cellspacing="1" style="width: 100%; ">
+	<tbody>
+		<tr>
+			<td>
+				.mws-tooltip-nw</td>
+			<td>
+				.mws-tooltip-n</td>
+			<td>
+				.mws-tooltip-ne</td>
+		</tr>
+		<tr>
+			<td>
+				.mws-tooltip-w</td>
+			<td>&nbsp;
+				</td>
+			<td>
+				.mws-tooltip-e</td>
+		</tr>
+		<tr>
+			<td>
+				.mws-tooltip-sw</td>
+			<td>
+				.mws-tooltip-s</td>
+			<td>
+				.mws-tooltip-se</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	For more info about this plugin, please visit&nbsp;<a href="http://onehackoranother.com/projects/jquery/tipsy/">http://onehackoranother.com/projects/jquery/tipsy/</a></p>
+<h4>
+	Data Tables</h4>
+<p>
+	DataTables is a plug-in for the jQuery Javascript library. It is a highly flexible tool, based upon the foundations of progressive enhancement, which will add advanced interaction controls to any HTML table.</p>
+<p>
+	To use datatables, you need to attach the necessary javascript file:</p>
+<pre class="highlight">
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.7.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/datatables/jquery.dataTables.js&quot;&gt;&lt;/script&gt;</pre>
+<p>
+	because data table styles is integrated with the core styles, you don&#39;t need to add any additional stylesheets.</p>
+<p>
+	For more info about data table, please visit&nbsp;<a href="http://datatables.net/">http://datatables.net/</a></p>
+<h4>
+	Dual List Box</h4>
+<p>
+	Dual List box is a form element, which has two list where you can move the items from the first to the second list. Dual List box needs you to setup the necessary HTML structure, and then call its function to initialize it.</p>
+<pre class="highlight">
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.7.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/duallistbox/jquery.dualListBox-1.3.min.js&quot;&gt;&lt;/script&gt;
+</pre>
+<p>
+	Because dual list box is integrated into this template&#39;s core scripts, you don&#39;t need to call any function, all you need to do is setting up the necessary markup:</p>
+<pre class="highlight">
+&lt;div class=&quot;mws-dualbox clearfix&quot;&gt;
+    &lt;div class=&quot;mws-dualbox-col1&quot;&gt;
+        &lt;div class=&quot;mws-dualbox-filter clearfix&quot;&gt;
+            &lt;label for=&quot;box1Filter&quot;&gt;Filter&lt;/label&gt;
+            &lt;input type=&quot;text&quot; id=&quot;box1Filter&quot; class=&quot;mws-textinput&quot; /&gt;
+            &lt;button type=&quot;button&quot; id=&quot;box1Clear&quot;&gt;X&lt;/button&gt;
+        &lt;/div&gt;
+
+        &lt;select id=&quot;box1View&quot; multiple=&quot;multiple&quot; size=&quot;15&quot;&gt;
+            &lt;option value=&quot;501649&quot;&gt;2008-2009 &quot;Mini&quot; Baja&lt;/option&gt;
+            &lt;option value=&quot;501497&quot;&gt;AAPA - Asian American Psychological Association&lt;/option&gt;
+            &lt;option value=&quot;501053&quot;&gt;Academy of Film Geeks&lt;/option&gt;
+            &lt;option value=&quot;500001&quot;&gt;Accounting Association&lt;/option&gt;
+            &lt;option value=&quot;501227&quot;&gt;ACLU&lt;/option&gt;
+            &lt;option value=&quot;501610&quot;&gt;Active Minds&lt;/option&gt;
+            &lt;option value=&quot;501514&quot;&gt;Activism with A Reel Edge (A.W.A.R.E.)&lt;/option
+            &gt;&lt;option value=&quot;501656&quot;&gt;Adopt a Grandparent Program&lt;/option&gt;
+            &lt;option value=&quot;501050&quot;&gt;Africa Awareness Student Organization&lt;/option&gt;
+            &lt;option value=&quot;501075&quot;&gt;African Diasporic Cultural RC Interns&lt;/option&gt;
+            &lt;option value=&quot;501493&quot;&gt;Agape&lt;/option&gt;
+            &lt;option value=&quot;501562&quot;&gt;AGE-Alliance for Graduate Excellence&lt;/option&gt;
+            &lt;option value=&quot;500676&quot;&gt;AICHE (American Inst of Chemical Engineers)&lt;/option&gt;
+            &lt;option value=&quot;501460&quot;&gt;AIDS Sensitivity Awareness Project ASAP&lt;/option&gt;
+            &lt;option value=&quot;500004&quot;&gt;Aikido Club&lt;/option
+            &gt;&lt;option value=&quot;500336&quot;&gt;Akanke&lt;/option&gt;
+        &lt;/select&gt;
+        &lt;span id=&quot;box1Counter&quot; class=&quot;countLabel&quot;&gt;&lt;/span&gt;
+        &lt;select id=&quot;box1Storage&quot;&gt;&lt;/select&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;mws-dualbox-col2&quot;&gt;
+        &lt;button id=&quot;to2&quot; type=&quot;button&quot;&gt;&amp;gt;&lt;/button&gt;
+        &lt;button id=&quot;allTo2&quot; type=&quot;button&quot;&gt;&amp;gt;&amp;gt;&lt;/button&gt;
+        &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+        &lt;button id=&quot;allTo1&quot; type=&quot;button&quot;&gt;&amp;lt;&amp;lt;&lt;/button&gt;
+        &lt;button id=&quot;to1&quot; type=&quot;button&quot;&gt;&amp;lt;&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;mws-dualbox-col3&quot;&gt;
+        &lt;div class=&quot;mws-dualbox-filter clearfix&quot;&gt;
+            &lt;label for=&quot;box2Filter&quot;&gt;Filter&lt;/label&gt;
+            &lt;input type=&quot;text&quot; id=&quot;box2Filter&quot; class=&quot;mws-textinput&quot; /&gt;
+            &lt;button type=&quot;button&quot; id=&quot;box2Clear&quot;&gt;X&lt;/button&gt;
+        &lt;/div&gt;
+
+        &lt;select id=&quot;box2View&quot; multiple=&quot;multiple&quot; size=&quot;15&quot;&gt;&lt;/select&gt;
+        &lt;span id=&quot;box2Counter&quot; class=&quot;countLabel&quot;&gt;&lt;/span&gt;
+        &lt;select id=&quot;box2Storage&quot;&gt;&lt;/select&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+<p>
+	The markup above is customized to work with this template, so it&#39;s recommended to follow it.</p>
+<p>
+	For more about this plugin, please visit&nbsp;<a href="http://www.meadmiracle.com/dlb/DLBDocumentation.aspx">http://www.meadmiracle.com/dlb/DLBDocumentation.aspx</a></p>
+<h4>
+	Custom File Input</h4>
+<p>
+	File input styling utilizes&nbsp;jquery.fileinput.js, a file input styling plugin from filmentgroup:</p>
+<p>
+	<a href="http://filamentgroup.com/lab/jquery_custom_file_input_book_designing_with_progressive_enhancement/">http://filamentgroup.com/lab/jquery_custom_file_input_book_designing_with_progressive_enhancement/</a></p>
+<p>
+	All you need to do is attach the necessary javascript and css file, since everything is already integrated into the template.</p>
+<pre class="highlight">
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.7.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/fileinput/js/jQuery.fileinput.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/fileinput/css/fileinput.css&quot;&gt;&lt;/script&gt;</pre>
+<h4>
+	Input Placeholder</h4>
+<p>
+	Input placeholder is a jquery plugin that helps non HTML5 browsers to support placeholders.</p>
+<p>
+	Since placeholder suppport is already integrated into this template, all you need to do is add the required javascript file, and define placeholder attribute at your form elements.</p>
+<pre class="highlight">
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.7.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/placeholder/jquery.placeholder.js&quot;&gt;&lt;/script&gt;</pre>
+<h4>
+	Validation Plugin</h4>
+<p>
+	Form validation on this template is based on the jquery validate plugin, one of the most popular jquery validation plugin available.</p>
+<pre class="highlight">
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.7.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/validate/jquery.validate.js&quot;&gt;&lt;/script&gt;</pre>
+<p>
+	To use the validation plugin, just add the javascript file, and define the correct class names to your form elements.</p>
+<p>
+	For more info about this plugin, please visit&nbsp;<a href="http://bassistance.de/jquery-plugins/jquery-plugin-validation/">http://bassistance.de/jquery-plugins/jquery-plugin-validation/</a></p>
+<h4>
+	Pretty Photo Plugin</h4>
+<p>
+	<strong>prettyPhoto </strong>is a jQuery lightbox clone. Not only does it support images, it also support for videos, flash, YouTube, iframes and ajax. It&rsquo;s a full blown media lightbox. It is very easy to setup, yet very flexible if you want to customize it a bit. Plus the script is compatible in every major browser, even IE6.</p>
+<p>
+	To use this plugin you need to add the necessary javascript and css files:</p>
+<pre class="highlight">
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.7.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/prettyphoto/js/jquery.prettyPhoto-min.js&quot;&gt;&lt;/script&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;plugins/prettyphoto/css/prettyPhoto.css&quot; /&gt;
+
+$(document).ready(function(){
+    $(&quot;a[rel^=&#39;prettyPhoto&#39;]&quot;).prettyPhoto();
+});
+
+&lt;a href=&quot;sample.jpg&quot; rel=&quot;prettyPhoto&quot;&gt;&lt;img src=&quot;sample.jpg alt=&quot;Sample&quot; /&gt;&lt;/a&gt;</pre>
+<p>
+	For more info about this plugin, please visit&nbsp;<a href="http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/">http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/</a></p>
+<h4>
+	jQuery Chosen Plugin</h4>
+<p>
+	Chosen is a JavaScript plugin that makes long, unwieldy select boxes much more user-friendly. It is currently available in both jQuery and Prototype flavors.</p>
+<p>
+	To use this plugin you need to add the necessary javascript and css files, add the necessary class name to your select inputs, and activate it.</p>
+<pre class="highlight">
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.7.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/chosen/chosen.jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;plugins/chosen/chosen.css&quot; media=&quot;screen&quot; /&gt;
+
+$(document).ready(function() {
+    $(&quot;select.chzn-select&quot;).chosen();
+});
+
+&lt;select class=&quot;chzn-select&quot;&gt;&lt;/select&gt;</pre>
+<p>
+	For more info about this plugin, please visit&nbsp;<a href="http://harvesthq.github.com/chosen/">http://harvesthq.github.com/chosen/</a></p>
+<h4>
+	jQuery-UI Time Picker</h4>
+<p>
+	UI Time Picker is an extension of jQuery-UI datepicker. This extension allows you to select time from the datepicker control. This extension requires you to add an extra javascript and css file:</p>
+<pre class="highlight">
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-ui.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/timepicker/timepicker-min.js&quot;&gt;&lt;/script&gt;
+
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;plugins/timepicker/timepicker.css&quot; media=&quot;screen&quot; /&gt;</pre>
+<p>
+	For more info about this plugin, please visit&nbsp;<a href="http://trentrichardson.com/examples/timepicker/">http://trentrichardson.com/examples/timepicker/</a></p>
+</section>
+<section id="changelog">
+	<h3>Changelog</h3><hr class="notop">
+<h4>
+	Version 1.6 (5/22/2012)</h4>
+<ul>
+	<li>
+		Added styles for jQuery-ui buttonset</li>
+	<li>
+		Updated jQuery-UI to 1.8.20</li>
+	<li>
+		Fixed the spinner examples</li>
+	<li>
+		Fixed datepickers that appears behind jQuery-UI dialog</li>
+	<li>
+		Added datepicker on dialog modal form example</li>
+	<li>
+		Added a custom wizard plugin, <strong>mwsWizard</strong></li>
+	<li>
+		Renamed wizard navigation class name to .mws-wizard-nav</li>
+	<li>
+		Removed smart wizard plugin</li>
+</ul>
+<h4>
+	Version 1.5 (4/29/2012)</h4>
+<ul>
+	<li>
+		Updated jQuery to 1.7.2</li>
+	<li>
+		DataTables plugin updated v1.9.1</li>
+	<li>
+		Table stylesheet updated to support DataTables 1.9.1</li>
+	<li>
+		Chosen updated to 0.9.8</li>
+	<li>
+		Fullcalendar updated to 1.5.3</li>
+	<li>
+		PLupload updated to 1.5.4</li>
+	<li>
+		prettyPhoto updated to 3.1.4</li>
+	<li>
+		jquery-ui timepicker addon updated to 1.0</li>
+	<li>
+		Moved the fileinput styling script as core script</li>
+	<li>
+		Renamed the file &quot;/css/core/report.css&quot; to &quot;/css/core/statistic.css&quot;</li>
+	<li>
+		Added table of contents on all css files</li>
+	<li>
+		Separated the jquery-ui folder</li>
+	<li>
+		Moved the jquery-ui timepicker addon into the jquery-ui folder</li>
+	<li>
+		Replaced placeholder plugin with a better one</li>
+	<li>
+		Fixed columned form error message</li>
+	<li>
+		Improved the responsive layout on mobile</li>
+</ul>
+<h4>
+	Version 1.4 (3/24/2012)</h4>
+<ul>
+	<li>
+		Wizard styling bug fixed</li>
+	<li>
+		Fixed dropdown messages that are not clickable</li>
+	<li>
+		Fixed background image bug</li>
+	<li>
+		Added smart wizard plugin</li>
+	<li>
+		Integrated the build in wizard style with smart wizard</li>
+</ul>
+<h4>
+	Version 1.3 (2/19/2012)</h4>
+<ul>
+	<li>
+		Fixed Login page not working on IE</li>
+	<li>
+		Form in jQuery-UI dialogs</li>
+	<li>
+		Fixed navigation disappear if searchbox removed on mobile devices</li>
+	<li>
+		File input error message now displays correctly</li>
+	<li>
+		Spinner error message now displays correctly</li>
+	<li>
+		Datepicker should not bring up virtual keyboard</li>
+	<li>
+		Themer can now change background image</li>
+	<li>
+		Images optimized
+		<ul>
+			<li>
+				core [435,250 bytes --&gt; 115,214 bytes]</li>
+			<li>
+				jui [72,348 bytes --&gt; 8,084 bytes]</li>
+			<li>
+				519 icons 16x16 [284,317 bytes --&gt; 233,544 bytes]</li>
+			<li>
+				461 icons 24x24 [227,177 bytes --&gt; 183,807 bytes]</li>
+			<li>
+				1400 icons 32x32 [2,264,409 bytes --&gt; 2,093,238 bytes]</li>
+		</ul>
+	</li>
+</ul>
+<h4>
+	Version 1.2 (2/10/2012)</h4>
+<ul>
+	<li>
+		Responsive Layout, this template now looks great on desktops, tablets and mobile phones</li>
+	<li>
+		Added column layout for forms</li>
+	<li>
+		Color change on hovered table rows</li>
+	<li>
+		Improved the login page, added validation and shake effect</li>
+	<li>
+		Added new form error style for radio and checkbox input</li>
+	<li>
+		Added jQuery-UI timepicker, an extension of the datepicker</li>
+	<li>
+		Panels can now be collapsed by default</li>
+	<li>
+		Changed the file styling plugin to jquery.fileinput</li>
+	<li>
+		jQuery-UI now support touch devices</li>
+	<li>
+		Enlarged the jQuery-UI slider handle so it will be easier to use on touch devices</li>
+	<li>
+		Bug and layout fixes</li>
+</ul>
+<h4>
+	Version 1.1 (2/5/2012)</h4>
+<ul>
+	<li>
+		Added select inputs with Chosen Plugin</li>
+	<li>
+		Added prettyPhoto Plugin</li>
+	<li>
+		Added functionality to dismiss form messages</li>
+	<li>
+		Improved the color chooser</li>
+	<li>
+		Improved the login page</li>
+</ul>
+<p>&nbsp;
+	</p>
+</section>
+<section id="credits">
+	<h3>Credits</h3><hr class="notop">
+<h4>
+	Icons</h4>
+<p>
+	IconSweets - <a href="http://www.yummgum.com">http://www.yummgum.com</a></p>
+<p>
+	Led Icons -&nbsp;<a href="http://led24.de/iconset/">http://led24.de/iconset/</a></p>
+<p>
+	Fatcow Icons -&nbsp;<a href="http://www.fatcow.com/free-icons">http://www.fatcow.com/free-icons</a></p>
+<h4>
+	Images</h4>
+<p>
+	Envato&#39;s Asset Library -&nbsp;<a href="http://themeforest.net/page/asset_library">http://themeforest.net/page/asset_library</a></p>
+<h4>
+	Plugins</h4>
+<ul>
+	<li>
+		Colorpicker (<a href="http://www.eyecon.ro/colorpicker/">http://www.eyecon.ro/colorpicker/</a>)</li>
+	<li>
+		File Manager (elFinder -&nbsp;<a href="http://elrte.org/elfinder">http://elrte.org/elfinder</a>)</li>
+	<li>
+		WYSIWYG Editor (elRTE -&nbsp;<a href="http://elrte.org/elfinder">http://elrte.org</a>)</li>
+	<li>
+		Flot Charts (<a href="http://code.google.com/p/flot/">http://code.google.com/p/flot/</a>)</li>
+	<li>
+		Calendar (<a href="http://arshaw.com/fullcalendar/">http://arshaw.com/fullcalendar/</a>)</li>
+	<li>
+		Growl Notifications (<a href="https://bitbucket.org/stanlemon/jgrowl">https://bitbucket.org/stanlemon/jgrowl</a>)</li>
+	<li>
+		Image Cropper (imgareaselect -&nbsp;<a href="http://odyniec.net/projects/imgareaselect/">http://odyniec.net/projects/imgareaselect/</a>)</li>
+	<li>
+		File Uploader (plupload -&nbsp;<a href="http://www.plupload.com/">http://www.plupload.com/</a>)</li>
+	<li>
+		Source Code Highlighter (<a href="http://www.andbeyonddesign.com/Sourcerer">http://www.andbeyonddesign.com/Sourcerer</a>)</li>
+	<li>
+		UI Spinner (<a href="http://www.yelotofu.com/2008/07/jquery-numeric-stepper/">http://www.yelotofu.com/2008/07/jquery-numeric-stepper/</a>)</li>
+	<li>
+		Tooltips (<a href="http://onehackoranother.com/projects/jquery/tipsy/">http://onehackoranother.com/projects/jquery/tipsy/</a>)</li>
+	<li>
+		Data Tables (<a href="http://datatables.net/">http://datatables.net/</a>)</li>
+	<li>
+		Dual List Box (<a href="http://www.meadmiracle.com/dlb/DLBDocumentation.aspx">http://www.meadmiracle.com/dlb/DLBDocumentation.aspx</a>)</li>
+	<li>
+		Styled File Inputs (<a href="http://filamentgroup.com/lab/jquery_custom_file_input_book_designing_with_progressive_enhancement/">http://filamentgroup.com/lab/jquery_custom_file_input_book_designing_with_progressive_enhancement/</a>)</li>
+	<li>
+		Input Placeholder for non HTML 5 browsers</li>
+	<li>
+		Validation Plugin (jquery.validate -&nbsp;<a href="http://bassistance.de/jquery-plugins/jquery-plugin-validation/">http://bassistance.de/jquery-plugins/jquery-plugin-validation/</a>)</li>
+	<li>
+		jQuery Chosen Plugin (<a href="http://harvesthq.github.com/chosen/">http://harvesthq.github.com/chosen/</a>)</li>
+	<li>
+		jQuery Pretty Photo Plugin (<a href="http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/">http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/</a>)</li>
+	<li>
+		jQuery-UI Time Picker (<a href="http://trentrichardson.com/examples/timepicker/">http://trentrichardson.com/examples/timepicker/</a>)</li>
+</ul>
+</section>
+
+	</div>
+</body>
+</html>
